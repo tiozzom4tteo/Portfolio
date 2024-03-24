@@ -1,9 +1,10 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/Gmail.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 import navIcon4 from "../assets/img/Github.svg";
 import { Helmet } from "react-helmet";
+import arrow from "../assets/img/freccia.png";
 
 export const Footer = () => {
   return (
@@ -33,6 +34,11 @@ export const Footer = () => {
               </a>
             </div>
             <p>Matteo Tiozzo - 2024. All Rights Reserved</p>
+            <a href="#home">
+              <Button id="return" variant="primary">
+                <img id="arrow" src={arrow} />
+              </Button>
+            </a>
           </Col>
         </Row>
       </Container>
