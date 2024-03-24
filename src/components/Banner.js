@@ -11,12 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [
-    "cyber newbie!",
-    "motorbike fan!",
-    "C.S. Unipd student!",
-    "travel lover!",
-  ];
+  const toRotate = ["cyber newbie!", "C.S. Unipd student!", "travel lover!"];
   const period = 20000;
 
   useEffect(() => {
@@ -62,7 +57,7 @@ export const Banner = () => {
         <title>Description</title>
         <meta
           name="description"
-          content="Unipd, university, computer science, cybersecurity, motorbike, travel"
+          content="Unipd, university, computer science, cybersecurity, motorbike, travel, sicurezza informatica"
         />
       </Helmet>
       <Container>
