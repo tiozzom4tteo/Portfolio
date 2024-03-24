@@ -57,7 +57,7 @@ export const Banner = () => {
   };
 
   return (
-    <section className="banner" id="home">
+    <section id="home">
       <Helmet>
         <title>Description</title>
         <meta
@@ -66,41 +66,27 @@ export const Banner = () => {
         />
       </Helmet>
       <Container>
-        <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={7}>
+        <Row>
+          <Col>
             <TrackVisibility>
               {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
+                <div>
                   <h1>
-                    {`Hi there! I'm Matteo, a\n`}{" "}
-                    <span className="wrap">{text}</span>
+                    {`Hi there! I'm Matteo, a\n`} <span>{text}</span>
                   </h1>
                   <p>
                     As a Computer Science student in my third year at the
                     University of Padua, I have a passion for both motorbikes 🏍️
                     and exploring the world through travel{" "}
                     <span> &#x1F3CD;</span> <span>&#x2708; &#x1F30D;</span>. My
-                    interests also extend to adrenaline-fueled sports. Although
-                    I am new to the field of cybersecurity, I am constantly
-                    seeking out new challenges and eager to expand my knowledge.
+                    interests also extend to adrenaline sports. Although I am
+                    new to the field of cybersecurity, I am constantly seeking
+                    out new challenges and eager to expand my knowledge.
                   </p>
                 </div>
               )}
             </TrackVisibility>
           </Col>
-          {/* questa è dove devi aggiungerci animazioni riguardo informatica */}
-          {/*
-          <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              <div>
-                <img src={"" /*INSERISCI FOTO ACCATTIVANTE />
-              </div>
-            </TrackVisibility>
-          </Col>*/}
         </Row>
       </Container>
     </section>

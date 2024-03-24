@@ -8,6 +8,15 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import colorSharp from "../assets/img/color-sharp.png";
 
+const skills = [
+  { image: seventy, name: "C++" },
+  { image: fifty, name: "Python" },
+  { image: eighty, name: "PhP" },
+  { image: sixty, name: "Javascript" },
+  { image: seventy, name: "Qt" },
+  { image: seventy, name: "English" },
+];
+
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
@@ -41,7 +50,7 @@ export const Skills = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div className="skill-bx wow zoomIn">
+            <div className="skill-bx">
               <h2>Skills</h2>
               <p>
                 During my years in college studying Computer Science, I have
@@ -64,30 +73,12 @@ export const Skills = () => {
                 infinite={true}
                 className="owl-carousel owl-theme skill-slider"
               >
-                <div className="item">
-                  <img src={seventy} />
-                  <h5>C++</h5>
-                </div>
-                <div className="item">
-                  <img src={fifty} />
-                  <h5>Python</h5>
-                </div>
-                <div className="item">
-                  <img src={eighty} />
-                  <h5>PhP</h5>
-                </div>
-                <div className="item">
-                  <img src={sixty} />
-                  <h5>Javascript</h5>
-                </div>
-                <div className="item">
-                  <img src={seventy} />
-                  <h5>Qt</h5>
-                </div>
-                <div className="item">
-                  <img src={seventy} />
-                  <h5>English</h5>
-                </div>
+                {skills.map((skill, index) => (
+                  <div key={index} className="item">
+                    <img src={skill.image} />
+                    <h5>{skill.name}</h5>
+                  </div>
+                ))}
               </Carousel>
             </div>
           </div>

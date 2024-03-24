@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
+  const [expanded, setExpanded] = useState(false); // Aggiunto
 
   useEffect(() => {
     const onScroll = () => {
@@ -23,62 +24,59 @@ export const NavBar = () => {
 
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
+    setExpanded(false);
   };
 
   return (
     <Router>
-      <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+      <Navbar
+        expanded={expanded}
+        onToggle={() => setExpanded(!expanded)}
+        expand="md"
+        className={scrolled ? "scrolled" : ""}
+      >
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link
+                id={activeLink === "home" ? "active-link" : ""}
                 href="#home"
-                className={
-                  activeLink === "home" ? "active navbar-link" : "navbar-link"
-                }
+                className={activeLink === "home" ? "active" : ""}
                 onClick={() => onUpdateActiveLink("home")}
               >
                 Home
               </Nav.Link>
               <Nav.Link
+                id={activeLink === "skills" ? "active-link" : ""}
                 href="#skills"
-                className={
-                  activeLink === "skills" ? "active navbar-link" : "navbar-link"
-                }
+                className={activeLink === "skills" ? "active" : ""}
                 onClick={() => onUpdateActiveLink("skills")}
               >
                 Skills
               </Nav.Link>
               <Nav.Link
+                id={activeLink === "projects" ? "active-link" : ""}
                 href="#projects"
-                className={
-                  activeLink === "projects"
-                    ? "active navbar-link"
-                    : "navbar-link"
-                }
+                className={activeLink === "projects" ? "active" : ""}
                 onClick={() => onUpdateActiveLink("projects")}
               >
                 Projects
               </Nav.Link>
+
               <Nav.Link
+                id={activeLink === "About Me" ? "active-link" : ""}
                 href="#Aboutme"
-                className={
-                  activeLink === "aboutme"
-                    ? "active navbar-link"
-                    : "navbar-link"
-                }
+                className={activeLink === "About Me" ? "active" : ""}
                 onClick={() => onUpdateActiveLink("About Me")}
               >
                 About Me
               </Nav.Link>
+
               <Nav.Link
+                id={activeLink === "contacts" ? "active-link" : ""}
                 href="#footer"
-                className={
-                  activeLink === "contacts"
-                    ? "active navbar-link"
-                    : "navbar-link"
-                }
+                className={activeLink === "contacts" ? "active" : ""}
                 onClick={() => onUpdateActiveLink("contacts")}
               >
                 Contacts

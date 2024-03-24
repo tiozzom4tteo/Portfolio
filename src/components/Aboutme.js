@@ -24,25 +24,25 @@ export const AboutMe = () => {
             <p>These are some of my crazy experience</p>
             <ul>
               <li>
-                <p>Skydiving</p>
+                <p className="adrenaline">Skydiving</p>
                 <video id="paracadute" controls>
                   <source src={paracadute} />
                   Il tuo browser non supporta il tag video.
                 </video>
               </li>
               <li>
-                <p>Bungee Jumping</p>
+                <p className="adrenaline">Bungee Jumping</p>
                 <video id="bunjee" controls muted>
                   <source src={bunjee} />
                   Il tuo browser non supporta il tag video.
                 </video>
               </li>
               <li>
-                <p>Scuba Diving</p>
+                <p className="adrenaline">Scuba Diving</p>
                 <img id="diving" src={diving} alt="Scuba Diving" />
               </li>
               <li>
-                <p>Skiing</p>
+                <p className="adrenaline">Skiing</p>
                 <video id="ski" controls muted>
                   <source src={ski} />
                   Il tuo browser non supporta il tag video.
