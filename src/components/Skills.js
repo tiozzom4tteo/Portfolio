@@ -1,4 +1,3 @@
-import seventy_five from "../assets/img/75.svg";
 import fifty from "../assets/img/50.svg";
 import sixty from "../assets/img/60.svg";
 import seventy from "../assets/img/70.svg";
@@ -44,7 +43,7 @@ export const Skills = () => {
         <title>Skills</title>
         <meta
           name="description"
-          content="javascript, english, php, python, c++, qt, cybersecurity, sql"
+          content="javascript, english, php, python, c++, qt, cybersecurity, sql, programming, cyber security"
         />
       </Helmet>
       <div className="container">
