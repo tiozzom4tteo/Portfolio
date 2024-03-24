@@ -5,15 +5,14 @@ import navIcon3 from "../assets/img/nav-icon3.svg";
 import navIcon4 from "../assets/img/Github.svg";
 import { Helmet } from "react-helmet";
 
-
 export const Footer = () => {
   return (
     <footer className="footer" id="footer">
       <Helmet>
-        <title>Contacts</title>
+        <title>Portfolio Tiozzo Matteo</title>
         <meta
           name="description"
-          content="github, instagram, email, gmail, linkedin, social"
+          content="github, instagram, email, gmail, linkedin, social, cybersecurity, sicurezza informatica, university, Unipd, Padua"
         />
       </Helmet>
       <Container>
