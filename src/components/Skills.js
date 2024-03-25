@@ -54,19 +54,20 @@ export const Skills = () => {
               <p>
                 During my years in college studying Computer Science, I have
                 acquired a variety of new skills. In my first year, I gained
-                knowledge on C programming, while in the second year, I focused
-                on utilizing Qt and C++ to develop a project called{" "}
-                <em>Sensor_Data_Factory</em> for the{" "}
+                knowledge on <b>C</b> programming, while in the second year, I
+                focused on utilizing <b>Qt</b> and <b>C++</b> to develop a
+                project called <em>Sensor_Data_Factory</em> for the{" "}
                 <em>"Object Oriented Programming" </em>
-                course. Additionally, I also learned how to utilize Python for
-                the <em>"Cybersecurity"</em> course and created a SQL database
-                for the <em>"Basi di dati"</em> course. In my third year, I
-                utilized PhP for the backend, as well as Javascript, HTML, and
-                CSS for the <em>"Tecnologie Web"</em> course, in order to
-                construct an e-commerce platform called <em>ML Tech</em>.
-                Throughout these three years, I have also enhanced my
-                proficiency in the English language. Currently, I am expanding
-                my knowledge in cybersecurity. These are my abilities:
+                course. Additionally, I also learned how to utilize{" "}
+                <b>Python</b> for the <em>"Cybersecurity"</em> course and
+                created a <b>SQL</b> database for the <em>"Basi di dati"</em>{" "}
+                course. In my third year, I utilized <b>PhP</b> for the backend,
+                as well as <b>Javascript</b>, <b>HTML</b>, and <b>CSS</b> for
+                the <em>"Tecnologie Web"</em> course, in order to construct an
+                e-commerce platform called <em>ML Tech</em>. Throughout these
+                three years, I have also enhanced my proficiency in the English
+                language. Currently, I am expanding my knowledge in
+                cybersecurity. These are my abilities:
               </p>
               <Carousel
                 responsive={responsive}

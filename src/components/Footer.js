@@ -24,7 +24,7 @@ export const Footer = () => {
                 <img src={navIcon1} />
               </a>
               <a href="https://github.com/tiozzom4tteo">
-                <img src={navIcon4} />
+                <img id="git" src={navIcon4} />
               </a>
               <a href="mailto:matteotiozzo.lavoro@gmail.com">
                 <img src={navIcon2} />

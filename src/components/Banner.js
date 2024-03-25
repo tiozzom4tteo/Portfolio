@@ -70,7 +70,7 @@ export const Banner = () => {
                     {`Hi there! I'm Matteo, a\n`} <span>{text}</span>
                   </h1>
                   <p>
-                    As a Computer Science student in my third year at the
+                    As a <b>Computer Science</b> student in my third year at the
                     <b> University of Padua</b>, I have a passion for both
                     motorbikes 🏍️ and exploring the world through travel{" "}
                     <span> &#x1F3CD;</span> <span>&#x2708; &#x1F30D;</span>. My
