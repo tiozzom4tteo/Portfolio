@@ -21,16 +21,16 @@ export const Footer = () => {
           <Col size={12} sm={6} className="text-center text-sm-end ">
             <div className="social-icon">
               <a href="https://www.linkedin.com/in/matteo-tiozzo-319395286/">
-                <img src={navIcon1} />
+                <img src={navIcon1} alt="linkedin icon" />
               </a>
               <a href="https://github.com/tiozzom4tteo">
-                <img id="git" src={navIcon4} />
+                <img id="git" src={navIcon4} alt="github icon" />
               </a>
               <a href="mailto:matteotiozzo.lavoro@gmail.com">
-                <img src={navIcon2} />
+                <img src={navIcon2} alt="gmail icon" />
               </a>
               <a href="https://www.instagram.com/tiozzo_matteo/">
-                <img src={navIcon3} />
+                <img src={navIcon3} alt="instagram icon" />
               </a>
             </div>
             <p>Matteo Tiozzo - 2024. All Rights Reserved</p>
