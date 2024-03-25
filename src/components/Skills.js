@@ -8,9 +8,9 @@ import "react-multi-carousel/lib/styles.css";
 import colorSharp from "../assets/img/color-sharp.png";
 
 const skills = [
-  { image: seventy, name: "C++" },
   { image: eighty, name: "PhP" },
   { image: eighty, name: "English" },
+  { image: seventy, name: "C++" },
   { image: sixty, name: "Javascript" },
   { image: seventy, name: "Qt" },
   { image: fifty, name: "Python" },
