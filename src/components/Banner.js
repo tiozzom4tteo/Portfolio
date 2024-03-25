@@ -67,7 +67,7 @@ export const Banner = () => {
               {({ isVisible }) => (
                 <div>
                   <h1>
-                    {`Hi there! I'm Matteo, a\n`} <span>{text}</span>
+                    {`Hi there! I'm Matteo, \n`} <br></br> a <span>{text}</span>
                   </h1>
                   <p>
                     As a <b>Computer Science</b> student in my third year at the

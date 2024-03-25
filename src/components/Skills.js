@@ -9,11 +9,11 @@ import colorSharp from "../assets/img/color-sharp.png";
 
 const skills = [
   { image: seventy, name: "C++" },
-  { image: fifty, name: "Python" },
   { image: eighty, name: "PhP" },
+  { image: eighty, name: "English" },
   { image: sixty, name: "Javascript" },
   { image: seventy, name: "Qt" },
-  { image: seventy, name: "English" },
+  { image: fifty, name: "Python" },
 ];
 
 export const Skills = () => {
