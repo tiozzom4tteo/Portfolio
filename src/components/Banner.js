@@ -71,12 +71,12 @@ export const Banner = () => {
                   </h1>
                   <p>
                     As a Computer Science student in my third year at the
-                    University of Padua, I have a passion for both motorbikes 🏍️
-                    and exploring the world through travel{" "}
+                    <b> University of Padua</b>, I have a passion for both
+                    motorbikes 🏍️ and exploring the world through travel{" "}
                     <span> &#x1F3CD;</span> <span>&#x2708; &#x1F30D;</span>. My
                     interests also extend to adrenaline sports. Although I am
-                    new to the field of cybersecurity, I am constantly seeking
-                    out new challenges and eager to expand my knowledge.
+                    new to the field of <b>cybersecurity</b>, I am constantly
+                    seeking out new challenges and eager to expand my knowledge.
                   </p>
                 </div>
               )}
