@@ -83,7 +83,7 @@ export const Skills = () => {
                   </p>
                 </li>
               </ul>
-              <p>These are my abilities:</p>
+              {/* <p>These are my abilities:</p> */}
               <Carousel
                 responsive={responsive}
                 infinite={true}

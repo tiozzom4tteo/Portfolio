@@ -73,14 +73,13 @@ export const Banner = () => {
                   <h1>
                     {`Hi there! I'm Matteo, \n`} <br></br> a <span>{text}</span>
                   </h1>
+                  <br></br>
                   <p>
-                    As a <b>Computer Science</b> student in my third year at the
-                    <b> University of Padua</b>, I have a passion for both
-                    motorbikes 🏍️ and exploring the world through travel{" "}
-                    <span> &#x1F3CD;</span> <span>&#x2708; &#x1F30D;</span>. My
-                    interests also extend to adrenaline sports. Although I am
-                    new to the field of <b>cybersecurity</b>, I am constantly
-                    seeking out new challenges and eager to expand my knowledge.
+                    I have a passion for <b>motorbikes</b> 🏍️ and <b>travel</b>{" "}
+                    <span> &#x1F30D;</span> My interests also extend to{" "}
+                    <b>adrenaline sports</b>. Although I am new to the field of{" "}
+                    <b>cybersecurity</b>, I am constantly seeking out new
+                    challenges and eager to expand my knowledge.
                   </p>
                 </div>
               )}

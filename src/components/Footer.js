@@ -33,7 +33,9 @@ export const Footer = () => {
                 <img src={navIcon3} alt="instagram icon" />
               </a>
             </div>
-            <p>Matteo Tiozzo - 2024. All Rights Reserved</p>
+            <p>
+              Matteo Tiozzo - 2024 <br></br>All Rights Reserved
+            </p>
             <a href="#home">
               <Button id="return" variant="primary">
                 <img id="arrow" src={arrow} />

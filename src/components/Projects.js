@@ -63,7 +63,6 @@ export const Projects = () => {
                   }
                 >
                   <h2>Projects</h2>
-                  <p>These are some of my University projects</p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Tab.Content
                       id="slideInUp"
