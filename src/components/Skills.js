@@ -51,30 +51,37 @@ export const Skills = () => {
           <div className="col-12">
             <div className="skill-bx">
               <h2>Skills</h2>
-              <p>University skills:</p>
-              <ul>
+              <ul id="uni-skills">
                 <li className="university-skills">
                   <p>
-                    First year: <b>C</b> programming.
+                    <b>C</b> programming.
                   </p>
                 </li>
                 <li className="university-skills">
                   <p>
-                    Second year: <b>Qt</b> and <b>C++</b> for{" "}
-                    <em>Sensor_Data_Factory</em>. <b>Python</b> for the{" "}
-                    <em>Cybersecurity</em> course and <b>PostgreSQL</b> for{" "}
-                    <em>Basi di dati</em> course.
+                    <b>Qt</b> and <b>C++</b> for <em>Sensor_Data_Factory</em>.{" "}
                   </p>
                 </li>
                 <li className="university-skills">
                   <p>
-                    Third year: <b>PhP</b>, <b>Javascript</b>, <b>HTML</b>, and{" "}
-                    <b>CSS</b> for <em>Tecnologie Web</em> course.
+                    <b>Python</b> for the <em>Cybersecurity</em> course and for{" "}
+                    <em>Unox S.p.A Hackathon</em>.
                   </p>
                 </li>
                 <li className="university-skills">
                   <p>
-                    Throughout the years: improved <b>english</b>.
+                    <b>PostgreSQL</b> for <em>Basi di dati</em> course.
+                  </p>
+                </li>
+                <li className="university-skills">
+                  <p>
+                    <b>Javascript</b>, <b>PhP</b>, <b>HTML</b>, and <b>CSS</b>{" "}
+                    for <em>Tecnologie Web</em> course.
+                  </p>
+                </li>
+                <li className="university-skills">
+                  <p>
+                    <b>English</b>.
                   </p>
                 </li>
                 <li className="university-skills">

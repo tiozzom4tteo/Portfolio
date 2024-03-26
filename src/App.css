@@ -247,9 +247,13 @@ p.danger {
   z-index: -4;
 }
 
+#uni-skills {
+  margin-top: 1.5em;
+}
+
 .university-skills {
   list-style: disc;
-  margin-left: 1.2em;
+  margin: 0 2em 0 1.2em;
 }
 
 /************ Projects Css ************/
