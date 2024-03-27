@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Helmet } from "react-helmet";
-import profilePhoto from "../assets/img/Risorse Umane UNX08282.jpg";
+import profilePhoto from "../assets/img/profilePhoto.jpg";
 
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -82,7 +82,11 @@ export const Banner = () => {
                     <b>cybersecurity</b>, I am constantly seeking out new
                     challenges and eager to expand my knowledge.
                   </p>
-                  <img src={profilePhoto} alt=" Matteo's profile photo" />{" "}
+                  <img
+                    src={profilePhoto}
+                    id="profile-photo"
+                    alt=" Matteo's profile photo"
+                  />{" "}
                 </div>
               )}
             </TrackVisibility>
