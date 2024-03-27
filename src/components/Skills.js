@@ -1,8 +1,8 @@
 import fifty from "../assets/img/50.svg";
 import sixty from "../assets/img/60.svg";
 import seventy from "../assets/img/70.svg";
-import { Helmet } from "react-helmet";
 import eighty from "../assets/img/80.svg";
+import { Helmet } from "react-helmet";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import colorSharp from "../assets/img/color-sharp.png";

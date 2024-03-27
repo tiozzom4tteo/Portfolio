@@ -159,8 +159,6 @@ p.danger {
   }
 }
 
-
-
 /************ Banner Css ************/
 
 #home {
@@ -195,6 +193,24 @@ p.danger {
   padding: auto;
   margin: auto;
   padding-bottom: 5%;
+}
+
+.profile-photo {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: auto;
+  padding: auto;
+}
+
+#profile-script {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: .5em;
 }
 
 /************ Skills Css ************/

@@ -2,9 +2,16 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import profilePhoto from "../assets/img/profilePhoto.jpg";
-
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+
+const photos = [
+  { image: profilePhoto, name: "Unox S.p.A. Hackathon" },
+  { image: profilePhoto, name: "Stelvio pass" },
+  { image: profilePhoto, name: "altra cosa che per ora non sai" },
+];
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -56,6 +63,26 @@ export const Banner = () => {
     }
   };
 
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
+
   return (
     <section id="home">
       <Helmet>
@@ -82,11 +109,30 @@ export const Banner = () => {
                     <b>cybersecurity</b>, I am constantly seeking out new
                     challenges and eager to expand my knowledge.
                   </p>
-                  <img
+                  <Carousel
+                    responsive={responsive}
+                    infinite={true}
+                    autoPlay={true}
+                    autoPlaySpeed={10000}
+                    arrows={false}
+                    className="carousel-profile"
+                  >
+                    {photos.map((skill, index) => (
+                      <div key={index} className="item">
+                        <img
+                          className="profile-photo"
+                          src={skill.image}
+                          alt="Profile photo Matteo Tiozzo"
+                        />
+                        <h5 id="profile-script">{skill.name}</h5>
+                      </div>
+                    ))}
+                  </Carousel>
+                  {/* <img
                     src={profilePhoto}
                     id="profile-photo"
                     alt=" Matteo's profile photo"
-                  />{" "}
+                  />{" "} */}
                 </div>
               )}
             </TrackVisibility>
