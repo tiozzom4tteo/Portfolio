@@ -1,5 +1,4 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import "./App.css";
 import { NavBar } from "./components/NavBar";
 import { Banner } from "./components/Banner";

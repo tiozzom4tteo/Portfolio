@@ -1,9 +1,8 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { Container, Row, Col, Tab } from "react-bootstrap";
 import { Helmet } from "react-helmet";
-
 import { ProjectCard } from "./ProjectCard";
-import React, { useEffect, useRef } from "react";
-import logoNoBg from "../assets/img/logoNoBg.png";
+import React from "react";
+import mltech from "../assets/img/logoNoBg.png";
 import light from "../assets/img/light.png";
 import park from "../assets/img/Park.png";
 import AI from "../assets/img/AI.png";
@@ -23,7 +22,7 @@ export const Projects = () => {
     {
       title: "ML Tech",
       description: "Web Development",
-      imgUrl: logoNoBg,
+      imgUrl: mltech,
       detailInfo: "https://github.com/tiozzom4tteo/TecWeb/tree/master",
       id: "ml-tech",
     },
