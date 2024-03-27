@@ -154,8 +154,8 @@ p.danger {
     margin: 10px 15px;
   }
 
-  #profile-photo {
-    margin-top: 1em;
+  #profile-script {
+    margin-bottom: -1em;
   }
 }
 
@@ -203,6 +203,7 @@ p.danger {
   height: auto;
   margin: auto;
   padding: auto;
+  margin-top: 1.5em;
 }
 
 #profile-script {

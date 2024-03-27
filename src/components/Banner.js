@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import profilePhoto from "../assets/img/profilePhoto.jpg";
+import motoPhoto from "../assets/img/profileMoto.png";
+import travelPhoto from "../assets/img/photoVacation.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "animate.css";
@@ -9,8 +11,8 @@ import TrackVisibility from "react-on-screen";
 
 const photos = [
   { image: profilePhoto, name: "Unox S.p.A. Hackathon" },
-  { image: profilePhoto, name: "Stelvio pass" },
-  { image: profilePhoto, name: "altra cosa che per ora non sai" },
+  { image: profilePhoto, name: "Unox S.p.A. Hackathon" },
+  { image: profilePhoto, name: "Unox S.p.A. Hackathon" },
 ];
 
 export const Banner = () => {
@@ -113,18 +115,18 @@ export const Banner = () => {
                     responsive={responsive}
                     infinite={true}
                     autoPlay={true}
-                    autoPlaySpeed={10000}
+                    autoPlaySpeed={6000}
                     arrows={false}
                     className="carousel-profile"
                   >
-                    {photos.map((skill, index) => (
+                    {photos.map((photo, index) => (
                       <div key={index} className="item">
                         <img
                           className="profile-photo"
-                          src={skill.image}
+                          src={photo.image}
                           alt="Profile photo Matteo Tiozzo"
                         />
-                        <h5 id="profile-script">{skill.name}</h5>
+                        <h5 id="profile-script">{photo.name}</h5>
                       </div>
                     ))}
                   </Carousel>
