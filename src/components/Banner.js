@@ -9,11 +9,7 @@ import "react-multi-carousel/lib/styles.css";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
-const photos = [
-  { image: profilePhoto, name: "Unox S.p.A. Hackathon" },
-  { image: profilePhoto, name: "Unox S.p.A. Hackathon" },
-  { image: profilePhoto, name: "Unox S.p.A. Hackathon" },
-];
+const photos = [{ image: profilePhoto, name: "Unox S.p.A. Hackathon" }];
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -101,15 +97,16 @@ export const Banner = () => {
               {({ isVisible }) => (
                 <div>
                   <h1>
-                    {`Hi there! I'm Matteo, \n`} <br></br> a <span>{text}</span>
+                    {`Hi there! I'm Matteo, \n`} <br></br> a{" "}
+                    <span id="banner-text">{text}</span>
                   </h1>
                   <br></br>
                   <p>
-                    I have a passion for <b>motorbikes</b> 🏍️ and <b>travel</b>{" "}
-                    <span> &#x1F30D;</span> My interests also extend to{" "}
-                    <b>adrenaline sports</b>. Although I am new to the field of{" "}
-                    <b>cybersecurity</b>, I am constantly seeking out new
-                    challenges and eager to expand my knowledge.
+                    I have a passion for <b>motorbikes</b> and <b>visiting</b>{" "}
+                    new places<span> 🏍️ &#x1F30D;</span>. My interests also
+                    extend to <b>adrenaline sports</b>. <br></br>I am{" "}
+                    <b>constantly seeking out new challenges</b> and eager to
+                    expand my knowledge.
                   </p>
                   <Carousel
                     responsive={responsive}
@@ -122,7 +119,9 @@ export const Banner = () => {
                     {photos.map((photo, index) => (
                       <div key={index} className="item">
                         <img
-                          className="profile-photo"
+                          className={
+                            photo.length > 1 ? "profile-photo" : "unique-photo"
+                          }
                           src={photo.image}
                           alt="Profile photo Matteo Tiozzo"
                         />
@@ -130,11 +129,6 @@ export const Banner = () => {
                       </div>
                     ))}
                   </Carousel>
-                  {/* <img
-                    src={profilePhoto}
-                    id="profile-photo"
-                    alt=" Matteo's profile photo"
-                  />{" "} */}
                 </div>
               )}
             </TrackVisibility>

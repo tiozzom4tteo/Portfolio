@@ -214,6 +214,20 @@ p.danger {
   margin-top: .5em;
 }
 
+.carousel-profile {
+  justify-content: center;
+}
+
+.unique-photo {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 1em;
+}
+
+/* #banner-text {} */
+
+
 /************ Skills Css ************/
 .skill {
   padding: 1em;
@@ -489,8 +503,8 @@ li {
 
 #return {
   position: fixed;
-  right: 1em;
-  bottom: 1em;
+  right: 1.6em;
+  bottom: 1.5em;
   border-radius: 40%;
   border-color: #151515;
   background-color: #151515;
