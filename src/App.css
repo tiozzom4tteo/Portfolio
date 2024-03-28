@@ -158,9 +158,6 @@ p.danger {
     margin-bottom: -1em;
   }
 
-  #banner-script {
-    margin-bottom: 3em;
-  }
 }
 
 /************ Banner Css ************/
@@ -227,6 +224,10 @@ p.danger {
   height: auto;
   margin: auto;
   margin-top: 1em;
+}
+
+p#banner-script {
+  margin-bottom: 1em;
 }
 
 /* #banner-text {} */
