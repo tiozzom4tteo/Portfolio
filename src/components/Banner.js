@@ -101,7 +101,7 @@ export const Banner = () => {
                     <span id="banner-text">{text}</span>
                   </h1>
                   <br></br>
-                  <p>
+                  <p id="banner-script">
                     I have a passion for <b>motorbikes</b> and <b>visiting</b>{" "}
                     new places<span> 🏍️ &#x1F30D;</span>. My interests also
                     extend to <b>adrenaline sports</b>. <br></br>I am{" "}

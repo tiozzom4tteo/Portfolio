@@ -157,6 +157,10 @@ p.danger {
   #profile-script {
     margin-bottom: -1em;
   }
+
+  #banner-script {
+    margin-bottom: 3em;
+  }
 }
 
 /************ Banner Css ************/
