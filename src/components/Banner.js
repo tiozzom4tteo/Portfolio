@@ -110,7 +110,7 @@ export const Banner = () => {
                   <Carousel
                     responsive={responsive}
                     infinite={true}
-                    autoPlay={true}
+                    autoPlay={photos.length > 1 ? true : false}
                     autoPlaySpeed={6000}
                     arrows={false}
                     className="carousel-profile"
@@ -119,7 +119,7 @@ export const Banner = () => {
                       <div key={index} className="item">
                         <img
                           className={
-                            photo.length > 1 ? "profile-photo" : "unique-photo"
+                            photos.length > 1 ? "profile-photo" : "unique-photo"
                           }
                           src={photo.image}
                           alt="Profile photo Matteo Tiozzo"
