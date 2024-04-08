@@ -109,7 +109,8 @@ export const Skills = () => {
                 </li>
                 <li className="university-skills">
                   <p>
-                    Currently: focusing on <b>Cybersecurity</b>.
+                    Currently: focusing on <b>Cybersecurity</b> and learning{" "}
+                    <b>Apache Kafka</b>.
                   </p>
                 </li>
               </ul>
