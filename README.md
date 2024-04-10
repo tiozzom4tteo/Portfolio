@@ -1,8 +1,8 @@
-# Hi, this is Matteo Tiozzo, a cybersecurity and motorbike enthusiast
+# Hi, this is Matteo Tiozzo, a cybersecurity and motorbike enthusiast!
 
 ## Who I am?
 
-As a University of Padua student in my third year, I enjoy taking my motorbike for rides in the Dolomites. My passion lies in cybersecurity and I am currently exploring different pentester software, including Metasploit, Burpsuite, and Zenmap. I have previous experience as a civil and industrial electrician at Tecnoimpianti srl for a year.
+As a University of Padua student in my third year, I enjoy taking my motorbike for rides in the Dolomites. My passion lies in cybersecurity and I am currently exploring different pentester software, including Metasploit, Burpsuite, and Zenmap. 
 
 ## My aspirations
 
