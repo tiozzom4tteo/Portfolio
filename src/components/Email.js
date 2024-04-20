@@ -1,11 +1,11 @@
 import emailjs from "emailjs-com";
 
-export const sendEmail = (ip) => {
+export const sendEmail = (ip, location, userAgent) => {
   emailjs
     .send(
       "service_x1a8f8s",
       "template_28qp37c",
-      { ip: ip },
+      { ip: ip, location: location, userAgent: userAgent },
       "7fy1ZFgME86RqS4mE"
     )
     .then(

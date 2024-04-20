@@ -11,15 +11,19 @@ import axios from "axios";
 
 function App() {
   React.useEffect(() => {
-    axios
-      .get("https://api.ipify.org?format=json")
-      .then((response) => {
-        const ip = response.data.ip;
-        sendEmail(ip);
-      })
-      .catch((error) => {
-        console.log("Errore nel recupero dell'IP:", error);
+    const userAgent = navigator.userAgent;
+    axios.get("https://api.ipify.org?format=json").then((response) => {
+      const ip = response.data.ip;
+      axios.get(`https://ipapi.co/${ip}/json/`).then((response) => {
+        const location =
+          response.data.city +
+          ", " +
+          response.data.region +
+          ", " +
+          response.data.country_name;
+        sendEmail(ip, location, userAgent);
       });
+    });
   }, []);
 
   return (
