@@ -8,10 +8,10 @@ import "react-multi-carousel/lib/styles.css";
 import colorSharp from "../assets/img/color-sharp.png";
 
 const skills = [
+  { image: eighty, name: "Python" },
   { image: eighty, name: "PhP" },
   { image: eighty, name: "English" },
   { image: seventy, name: "C++" },
-  { image: fifty, name: "Python" },
   { image: sixty, name: "Javascript" },
   { image: seventy, name: "Qt" },
 ];
@@ -55,6 +55,17 @@ export const Skills = () => {
                 <li className="university-skills">
                   <p>
                     <b>C</b> programming.
+                  </p>
+                </li>
+                <li className="university-skills">
+                  <p>
+                    <b>Redpanda</b>, <b>Apache Flink</b> and <b>Python</b> for{" "}
+                    <em>
+                      <a href="https://github.com/tiozzom4tteo/SyncCity">
+                        SyncCity
+                      </a>
+                    </em>{" "}
+                    project.
                   </p>
                 </li>
                 <li className="university-skills">
@@ -109,8 +120,7 @@ export const Skills = () => {
                 </li>
                 <li className="university-skills">
                   <p>
-                    Currently: focusing on <b>Cybersecurity</b> and{" "}
-                    <b>Apache Kafka</b>.
+                    Currently: focusing in <b>Offensive Security</b>.
                   </p>
                 </li>
                 <li className="university-skills">

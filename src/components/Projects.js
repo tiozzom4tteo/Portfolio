@@ -6,6 +6,7 @@ import mltech from "../assets/img/logoNoBg.png";
 import light from "../assets/img/light.png";
 import park from "../assets/img/Park.png";
 import AI from "../assets/img/AI.png";
+import synccity from "../assets/img/synccity.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -39,6 +40,13 @@ export const Projects = () => {
       imgUrl: AI,
       detailInfo: "https://github.com/tiozzom4tteo/UNOX-Hackathon",
       id: "hackathon",
+    },
+    {
+      title: "SyncCity: a smart city monitoring platform",
+      description: "Big Data",
+      imgUrl: synccity,
+      detailInfo: "https://github.com/tiozzom4tteo/SyncCity",
+      id: "synccity",
     },
   ];
 
