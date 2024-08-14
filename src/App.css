@@ -421,6 +421,13 @@ li {
   list-style-type: none;
 }
 
+/************ Curriculum Section ************/
+/* #curriculum {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+} */
+
 /************ Footer Css ************/
 .footer {
   padding: 1em;

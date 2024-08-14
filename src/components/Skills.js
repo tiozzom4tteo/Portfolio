@@ -54,7 +54,7 @@ export const Skills = () => {
               <ul id="uni-skills">
                 <li className="university-skills">
                   <p>
-                    <b>C</b> programming.
+                    <b>C</b> programming
                   </p>
                 </li>
                 <li className="university-skills">
@@ -65,7 +65,7 @@ export const Skills = () => {
                         SyncCity
                       </a>
                     </em>{" "}
-                    project.
+                    project
                   </p>
                 </li>
                 <li className="university-skills">
@@ -76,7 +76,6 @@ export const Skills = () => {
                         Sensor_Data_Factory
                       </a>
                     </em>
-                    .{" "}
                   </p>
                 </li>
                 <li className="university-skills">
@@ -87,7 +86,6 @@ export const Skills = () => {
                         Unox S.p.A Hackathon
                       </a>
                     </em>
-                    .
                   </p>
                 </li>
                 <li className="university-skills">
@@ -98,7 +96,7 @@ export const Skills = () => {
                         Basi di dati
                       </a>
                     </em>{" "}
-                    course.
+                    course
                   </p>
                 </li>
                 <li className="university-skills">
@@ -110,17 +108,17 @@ export const Skills = () => {
                         Tecnologie Web
                       </a>
                     </em>{" "}
-                    course.
+                    course
                   </p>
                 </li>
                 <li className="university-skills">
                   <p>
-                    <b>English</b>.
+                    <b>English</b>
                   </p>
                 </li>
                 <li className="university-skills">
                   <p>
-                    Currently: focusing in <b>Offensive Security</b>.
+                    Currently: focusing in <b>Offensive Security</b>
                   </p>
                 </li>
                 <li className="university-skills">

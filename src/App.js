@@ -7,6 +7,7 @@ import { Projects } from "./components/Projects";
 import { AboutMe } from "./components/Aboutme";
 import { Footer } from "./components/Footer";
 import { sendEmail } from "./components/Email";
+// import { CV } from "./components/CV";
 import axios from "axios";
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
       <Skills />
       <Projects />
       <AboutMe />
+      {/* <CV /> */}
       <Footer />
     </div>
   );
