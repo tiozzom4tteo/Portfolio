@@ -121,7 +121,7 @@ export const Skills = () => {
                     Currently: focusing in <b>Offensive Security</b>
                   </p>
                 </li>
-                <li className="university-skills">
+                {/* <li className="university-skills">
                   <p>
                     Work:{" "}
                     <em>
@@ -134,7 +134,7 @@ export const Skills = () => {
                       </a>
                     </em>
                   </p>
-                </li>
+                </li> */}
               </ul>
               {/* <p>These are my abilities:</p> */}
               <Carousel
