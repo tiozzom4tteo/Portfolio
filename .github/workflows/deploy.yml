@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout the repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Clear npm cache
         run: npm cache clean --force
@@ -25,7 +25,13 @@ jobs:
       - name: Build the project
         run: CI=false npm run build
 
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "matteo.tiozzo.1@studenti.unipd.it"
+          git remote set-url origin https://${{ secrets.DEPLOY }}@github.com/${{ github.repository }}.git
+
       - name: Deploy to GitHub Pages
         run: CI=false npm run deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.DEPLOY}}
+          GITHUB_TOKEN: ${{ secrets.DEPLOY }}
