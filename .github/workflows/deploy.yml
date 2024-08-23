@@ -11,12 +11,12 @@ jobs:
 
     steps:
       - name: Checkout the repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Install Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: "22.5.1" # Versione di Node.js che vuoi usare
+      # - name: Install Node.js
+      #   uses: actions/setup-node@v3
+      #   with:
+      #     node-version: "22.5.1" # Versione di Node.js che vuoi usare
 
       - name: Install dependencies
         run: npm install
