@@ -65,6 +65,15 @@ export const NavBar = () => {
               </Nav.Link>
 
               <Nav.Link
+                id={activeLink === "works" ? "active-link" : ""}
+                href="#works"
+                className={activeLink === "works" ? "active" : ""}
+                onClick={() => onUpdateActiveLink("works")}
+              >
+                Work
+              </Nav.Link>
+
+              <Nav.Link
                 id={activeLink === "About Me" ? "active-link" : ""}
                 href="#Aboutme"
                 className={activeLink === "About Me" ? "active" : ""}

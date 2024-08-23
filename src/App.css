@@ -230,11 +230,9 @@ p#banner-script {
   margin-bottom: 1em;
 }
 
-/* #banner-text {} */
-
 
 /************ Skills Css ************/
-.skill {
+.skill, .work {
   padding: 1em;
   position: relative;
   background-image: url('./assets/img/color-sharp.png');
@@ -243,20 +241,20 @@ p#banner-script {
   background-repeat: no-repeat;
 }
 
-.skill-bx {
+.skill-bx, .work-bx {
   background: #151515;
   text-align: center;
   width: 100%;
 
 }
 
-.skill h2 {
+.skill h2, .work h2 {
   padding-top: .5em;
   font-size: 2em;
   font-weight: 700;
 }
 
-.skill p {
+.skill p, .work p{
   color: #B8B8B8;
   font-size: 1.2em;
   letter-spacing: 0.1em;
@@ -286,11 +284,11 @@ p#banner-script {
   z-index: -4;
 }
 
-#uni-skills {
+#uni-skills, #work-skills {
   margin-top: 1.5em;
 }
 
-.university-skills {
+.university-skills, .work-skills {
   list-style: disc;
   margin: 0 1em 0 0;
 }
