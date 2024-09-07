@@ -16,7 +16,7 @@ function App() {
   // Funzione per monitorare i reloads
   const checkPageReloads = () => {
     const maxReloads = 5;
-    const timeFrame = 10 * 1000; 
+
     const blockDuration = 900 * 1000; 
 
     const currentTime = new Date().getTime();
@@ -24,7 +24,7 @@ function App() {
     // Recupera i timestamp dei caricamenti della pagina
     let reloadTimestamps = JSON.parse(localStorage.getItem('reloadTimestamps')) || [];
 
-    reloadTimestamps = reloadTimestamps.filter(timestamp => currentTime - timestamp <= timeFrame);
+
 
     if (reloadTimestamps.length >= maxReloads) {
       setIsBlocked(true);
