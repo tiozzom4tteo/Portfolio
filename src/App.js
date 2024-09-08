@@ -8,6 +8,7 @@ import { AboutMe } from "./components/Aboutme";
 import { Footer } from "./components/Footer";
 import { Work } from "./components/Work";
 import CookieConsent from "./components/Cookie";
+import {CV} from "./components/CV";
 
 function App() {
   const [isBlocked, setIsBlocked] = useState(false);
@@ -35,7 +36,7 @@ function App() {
       }, blockDuration);
       return;
     }
-    // Aggiungi il timestamp attuale
+
     reloadTimestamps.push(currentTime);
     localStorage.setItem('reloadTimestamps', JSON.stringify(reloadTimestamps));
   };
@@ -46,11 +47,11 @@ function App() {
 
   return (
     <div className="App">
-      {isBlocked ? (
+      {/* {isBlocked ? (
         <div className="blocked-overlay">
           <h1>Ooooopss... you seem to have been blocked, please try again later</h1>
         </div>
-      ) : (
+      ) : ( */}
         <>
           <NavBar />
           <Banner />
@@ -58,10 +59,11 @@ function App() {
           <Projects />
           <Work />
           <AboutMe />
+          <CV />
           <Footer />
           <CookieConsent />
         </>
-      )}
+      {/* )} */}
     </div>
   );
 }

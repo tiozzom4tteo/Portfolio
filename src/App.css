@@ -420,11 +420,28 @@ li {
 }
 
 /************ Curriculum Section ************/
-/* #curriculum {
+#curriculum {
   display: flex;
-  justify-content: center;
-  margin: 2em;
-} */
+  margin: 4em auto; 
+  margin-bottom: 7em;
+  color: white;
+  font-weight: bold;
+  padding: 1em;
+  background-color: #308cef; 
+  cursor: pointer; 
+  text-align: center; 
+}
+
+#curriculum:hover{
+  background-color: rgba(255, 255, 255, 0.5);
+  color:rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+  #curriculum {
+    margin: auto auto; 
+  }
+}
 
 /************ Footer Css ************/
 .footer {
@@ -594,7 +611,6 @@ li {
     max-width: 100%;
   }
 }
-
 
 /************ Block Screen ************/
 .blocked-overlay {

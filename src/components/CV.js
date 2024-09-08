@@ -1,10 +1,11 @@
-// import Curriculum from "../assets/CV/TiozzoMatteo.pdf";
+import Curriculum from "../assets/CV/TiozzoMatteo.pdf";
 
 
 
-// export const CV = () => {
-//     return (
-//       <a id="curriculum" href={Curriculum} download>More about me here</a>
-//     );
-//   };
+export const CV = () => {
+    return (
+        <button id="curriculum" onClick={() => window.open(Curriculum)}>See my curriculum</button>
+
+    );
+  };
   
