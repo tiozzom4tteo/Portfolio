@@ -19,7 +19,7 @@ const CookieConsent = () => {
   }, []);
 
   const acceptCookies = () => {
-    Cookies.set('cookie_consent', 'accepted', { expires: 7 });
+    Cookies.set('cookie_consent', 'accepted', { expires: 1 });
     setIsVisible(false);
 
     userAgent = navigator.userAgent;
@@ -34,9 +34,9 @@ const CookieConsent = () => {
           ", " +
           response.data.country_name;
 
-        Cookies.set('user_ip', ip, { expires: 7 });
-        Cookies.set('user_location', location, { expires: 7 });
-        Cookies.set('user_agent', userAgent, { expires: 7 });
+        Cookies.set('user_ip', ip, { expires: 1 });
+        Cookies.set('user_location', location, { expires: 1 });
+        Cookies.set('user_agent', userAgent, { expires: 1 });
 
         sendEmail(ip, location, userAgent);
       });
@@ -44,7 +44,7 @@ const CookieConsent = () => {
   };
 
   const declineCookies = () => {
-    Cookies.set('cookie_consent', 'declined', { expires: 7 });
+    Cookies.set('cookie_consent', 'declined', { expires: 1 });
     setIsVisible(false);
     ip = "N/A";
     location = "N/A";
@@ -56,7 +56,7 @@ const CookieConsent = () => {
 
   return (
     <div className="cookie-banner">
-      <p>Our website uses cookies to enhance your browsing experience and to provide personalized content.</p>
+      <p>My website uses cookies to enhance your browsing experience and to provide personalized content.</p>
       <button id="acceptCookies" onClick={acceptCookies}>Accept</button>
       <button id="declineCookies" onClick={declineCookies}>Decline</button>
     </div>
