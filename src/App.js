@@ -21,7 +21,7 @@ function App() {
       <AboutMe />
       <CV />
       <Footer />
-      {/* <CookieConsent /> */}
+      <CookieConsent />
     </div>
   );
 }
