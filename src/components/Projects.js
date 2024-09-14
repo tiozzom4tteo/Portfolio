@@ -6,6 +6,7 @@ import mltech from "../assets/img/logoNoBg.png";
 import light from "../assets/img/light.png";
 import park from "../assets/img/Park.png";
 import AI from "../assets/img/AI.png";
+import cyber from "../assets/img/cyber.png";
 import synccity from "../assets/img/synccity.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -47,6 +48,13 @@ export const Projects = () => {
       imgUrl: synccity,
       detailInfo: "https://github.com/tiozzom4tteo/SyncCity",
       id: "synccity",
+    },
+    {
+      title: "Cyber security projects",
+      description: "Cybersecurity research",
+      imgUrl: cyber,
+      detailInfo: "https://github.com/tiozzom4tteo/Cybersecurity-Projects",
+      id: "cybersecurity",
     },
   ];
 

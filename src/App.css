@@ -245,7 +245,10 @@ p#banner-script {
   background: #151515;
   text-align: center;
   width: 100%;
+}
 
+.work-bx{
+  padding: 1em;
 }
 
 .skill h2, .work h2 {
@@ -286,6 +289,7 @@ p#banner-script {
 
 #uni-skills, #work-skills {
   margin-top: 1.5em;
+
 }
 
 .university-skills, .work-skills {
