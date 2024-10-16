@@ -14,26 +14,19 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const projects = [
     {
+      title: "Cyber security projects",
+      description: "Cybersecurity research",
+      imgUrl: cyber,
+      detailInfo: "https://github.com/tiozzom4tteo/Cybersecurity-Projects",
+      id: "cybersecurity",
+    },
+    {
       title: "Sensor Data Factory",
       description: "QT & C++ Development",
       imgUrl: light,
       detailInfo:
         "https://github.com/tiozzom4tteo/Sensor_Data_Factory/blob/main/README.md",
       id: "sensor-data-factory",
-    },
-    {
-      title: "ML Tech",
-      description: "Web Development",
-      imgUrl: mltech,
-      detailInfo: "https://github.com/tiozzom4tteo/TecWeb/tree/master",
-      id: "ml-tech",
-    },
-    {
-      title: "Park North Italy Srl",
-      description: "MySQL & C++ development",
-      imgUrl: park,
-      detailInfo: "https://github.com/tiozzom4tteo/Park-North-Italy-Srl",
-      id: "park-north-italy-srl",
     },
     {
       title: "Unox S.p.A Hackathon",
@@ -50,12 +43,20 @@ export const Projects = () => {
       id: "synccity",
     },
     {
-      title: "Cyber security projects",
-      description: "Cybersecurity research",
-      imgUrl: cyber,
-      detailInfo: "https://github.com/tiozzom4tteo/Cybersecurity-Projects",
-      id: "cybersecurity",
+      title: "ML Tech",
+      description: "Web Development",
+      imgUrl: mltech,
+      detailInfo: "https://github.com/tiozzom4tteo/TecWeb/tree/master",
+      id: "ml-tech",
     },
+    {
+      title: "Park North Italy Srl",
+      description: "MySQL & C++ development",
+      imgUrl: park,
+      detailInfo: "https://github.com/tiozzom4tteo/Park-North-Italy-Srl",
+      id: "park-north-italy-srl",
+    },
+    
   ];
 
   return (

@@ -101,11 +101,7 @@ export const Banner = () => {
                   </h1>
                   <br></br>
                   <p id="banner-script">
-                    I have a passion for <b>motorbikes</b> and <b>visiting</b>{" "}
-                    new places<span> 🏍️ &#x1F30D;</span>. My interests also
-                    extend to <b>adrenaline sports</b>. <br></br>I am{" "}
-                    <b>constantly seeking out new challenges</b> and eager to
-                    expand my knowledge.
+                  I have a passion for <b>motorcycles</b> and <b>exploring</b>{" "} new places <span> 🏍️ &#x1F30D;</span>. My interests also include <b>adrenaline sports</b>. <br></br>I am{" "} <b>always on the lookout for new challenges</b> and am eager to broaden my knowledge.
                   </p>
                   <Carousel
                     responsive={responsive}

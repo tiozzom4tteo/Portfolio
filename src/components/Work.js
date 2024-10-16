@@ -51,11 +51,11 @@ export const Work = () => {
                             <b>Software Developer</b> in <a href="https://www.city-ware.it/"> Cityware Engineering S.r.l.</a>
                         </p>
                     </li>
-                    <li className="work-skills">
+                    {/* <li className="work-skills">
                         <p>
                             <b>Civil and industrial electrician</b> in <a href="https://www.tecnoimpiantinet.it/">Tecnoimpianti S.r.l.</a>
                         </p>
-                    </li>
+                    </li> */}
                 </ul>
                 {/* <Carousel
                 //   responsive={responsive}

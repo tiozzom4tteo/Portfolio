@@ -52,6 +52,21 @@ export const Skills = () => {
             <div className="skill-bx">
               <h2>Skills</h2>
               <ul id="uni-skills">
+              <li className="university-skills">
+                  <p>
+                   <b>Burp Suite, Ghidra, Nmap, Metasploit, Wireshark, IDA Free, Radare2, and Detect It Easy (DiE)</b> are tools I've explored out of personal curiosity and to enhance my cybersecurity skills
+                  </p>
+                </li>
+                <li className="university-skills">
+                  <p>
+                    <b>Python</b> for the <em>Cybersecurity</em> course and for{" "}
+                    <em>
+                      <a href="https://github.com/tiozzom4tteo/UNOX-Hackathon">
+                        Unox S.p.A Hackathon
+                      </a>
+                    </em>
+                  </p>
+                </li>
                 <li className="university-skills">
                   <p>
                     <b>C</b> programming
@@ -74,16 +89,6 @@ export const Skills = () => {
                     <em>
                       <a href="https://github.com/tiozzom4tteo/Sensor_Data_Factory/blob/main/README.md">
                         Sensor_Data_Factory
-                      </a>
-                    </em>
-                  </p>
-                </li>
-                <li className="university-skills">
-                  <p>
-                    <b>Python</b> for the <em>Cybersecurity</em> course and for{" "}
-                    <em>
-                      <a href="https://github.com/tiozzom4tteo/UNOX-Hackathon">
-                        Unox S.p.A Hackathon
                       </a>
                     </em>
                   </p>
@@ -116,11 +121,7 @@ export const Skills = () => {
                     <b>English</b>
                   </p>
                 </li>
-                <li className="university-skills">
-                  <p>
-                    Currently: focusing in <b>malware analysis</b> with AI
-                  </p>
-                </li>
+                
                 {/* <li className="university-skills">
                   <p>
                     Work:{" "}
