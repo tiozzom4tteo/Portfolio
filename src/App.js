@@ -9,6 +9,7 @@ import { Footer } from "./components/Footer";
 import { Work } from "./components/Work";
 import CookieConsent from "./components/Cookie";
 import { CV } from "./components/CV";
+import {Certifications} from "./components/Certifications";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Projects />
       <Work />
       <AboutMe />
+      {/* <Certifications /> */}
       <CV />
       <Footer />
       <CookieConsent />

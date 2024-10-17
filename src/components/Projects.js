@@ -65,7 +65,7 @@ export const Projects = () => {
         <title>Projects</title>
         <meta
           name="description"
-          content="Projects, object oriented programming, c++, c, javascript"
+          content="Projects, object oriented programming, c++, c, javascript, cybersecurity, python, intrusion detection system, machine learning, big data, web development, mysql, c++, qt, genai, smart city, monitoring platform"
         />
       </Helmet>
       <Container>
