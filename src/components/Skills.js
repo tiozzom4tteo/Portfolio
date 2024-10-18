@@ -54,7 +54,7 @@ export const Skills = () => {
               <ul id="uni-skills">
               <li className="university-skills">
                   <p>
-                   <b>Burp Suite, Ghidra, Nmap, Metasploit, Wireshark, IDA Free, Radare2, and Detect It Easy (DiE)</b> are tools I've explored out of personal curiosity and to enhance my cybersecurity skills
+                   <b>Burp Suite, Ghidra, Nmap, Metasploit, Wireshark, IDA Free, Radare2 and Detect It Easy (DiE)</b> are tools I've explored out of personal curiosity and to enhance my cybersecurity skills
                   </p>
                 </li>
                 <li className="university-skills">

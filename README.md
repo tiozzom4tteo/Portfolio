@@ -14,7 +14,6 @@ Upon completing high school, I spent a year working at Tecnoimpianti srl. During
 
 ## My skills
 
+- Burp Suite, Ghidra, Nmap, Metasploit, Wireshark, IDA Free and Detect It Easy (DiE)
+- Python, C/C++, Javascript, PhP, HTML, css
 - English level B2
-- Teamwork
-- Communication
-- Organized
