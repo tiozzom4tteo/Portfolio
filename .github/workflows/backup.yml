@@ -1,0 +1,26 @@
+name: Backup on Push
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up SSH key
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_ed25519
+        chmod 600 ~/.ssh/id_ed25519
+        ssh-keyscan 192.168.1.195 >> ~/.ssh/known_hosts
+      env:
+        SSH_KEY: ${{ secrets.SSH_KEY }}
+
+    - name: Sync files
+      run: rsync -avz --exclude '.git' ./ tiozzo@192.168.1.195:/home/tiozzo/Portfolio/
