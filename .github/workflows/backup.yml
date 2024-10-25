@@ -13,15 +13,23 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
+    - name: Test Network Connectivity
+      run: |
+        nc -vz 192.168.1.195 22 || echo "Cannot connect to SSH port"
+        ping -c 4 192.168.1.195 || echo "Cannot ping server"
+
+    - name: Debug SSH Configuration
+      run: |
+          cat ~/.ssh/config || echo "No SSH config file"
+          ssh -vvv 192.168.1.195 echo "SSH connection test" 
+    
     - name: Set up SSH key
       run: |
-        mkdir -p /home/runner/.ssh
-        echo "${{ secrets.SSH_KEY }}" > /home/runner/.ssh/id_ed25519
-        chmod 600 /home/runner/.ssh/id_ed25519
-        ssh-keyscan 192.168.1.195 > /home/runner/.ssh/known_hosts 2>&1
-      shell: /usr/bin/bash -e {0}
-    
-    
+        mkdir -p ~/.ssh
+        echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_ed25519
+        chmod 600 ~/.ssh/id_ed25519
+        echo "Host 192.168.1.195\n\tStrictHostKeyChecking no\n\tUserKnownHostsFile=/dev/null" > ~/.ssh/config
+        ssh-keyscan -H 192.168.1.195 >> ~/.ssh/known_hosts
 
     - name: Sync files
       run: rsync -avz --exclude '.git' ./ tiozzo@192.168.1.195:/home/tiozzo/Portfolio/
