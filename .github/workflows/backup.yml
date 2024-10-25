@@ -15,12 +15,11 @@ jobs:
 
     - name: Set up SSH key
       run: |
-        mkdir -p ~/.ssh
-        echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_ed25519
-        chmod 600 ~/.ssh/id_ed25519
-        ssh-keyscan 192.168.1.195 >> ~/.ssh/known_hosts
-      env:
-        SSH_KEY: ${{ secrets.SSH_KEY }}
+        mkdir -p /home/runner/.ssh
+        echo "${{ secrets.SSH_KEY }}" > /home/runner/.ssh/id_ed25519
+        chmod 600 /home/runner/.ssh/id_ed25519
+        ssh-keyscan 192.168.1.195 >> /home/runner/.ssh/known_hosts
+    
 
     - name: Sync files
       run: rsync -avz --exclude '.git' ./ tiozzo@192.168.1.195:/home/tiozzo/Portfolio/
