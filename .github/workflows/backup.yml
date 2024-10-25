@@ -18,7 +18,9 @@ jobs:
         mkdir -p /home/runner/.ssh
         echo "${{ secrets.SSH_KEY }}" > /home/runner/.ssh/id_ed25519
         chmod 600 /home/runner/.ssh/id_ed25519
-        ssh-keyscan 192.168.1.195 >> /home/runner/.ssh/known_hosts
+        ssh-keyscan 192.168.1.195 > /home/runner/.ssh/known_hosts 2>&1
+      shell: /usr/bin/bash -e {0}
+    
     
 
     - name: Sync files
