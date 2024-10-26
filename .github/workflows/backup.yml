@@ -18,21 +18,21 @@ jobs:
     
     - name: Test Network Connectivity
       run: |
-        nc -vz 192.168.1.195 22 || echo "Cannot connect to SSH port"
-        ping -c 4 192.168.1.195 || echo "Cannot ping server"
+        nc -vz 176.32.22.171 22 || echo "Cannot connect to SSH port"
+        ping -c 4 176.32.22.171 || echo "Cannot ping server"
 
     - name: Debug SSH Configuration
       run: |
           cat ~/.ssh/config || echo "No SSH config file"
-          ssh -vvv 192.168.1.195 echo "SSH connection test" 
+          ssh -vvv 176.32.22.171 echo "SSH connection test" 
     
     - name: Set up SSH key
       run: |
         mkdir -p ~/.ssh
         echo "${{ secrets.SSH_KEY }}" | base64 -d > ~/.ssh/id_ed25519
         chmod 600 ~/.ssh/id_ed25519
-        echo -e "Host 192.168.1.195\n\tStrictHostKeyChecking no\n\tUserKnownHostsFile=/dev/null\n\tUser tiozzo" > ~/.ssh/config
-        ssh-keyscan -H 192.168.1.195 >> ~/.ssh/known_hosts
+        echo -e "Host 176.32.22.171\n\tStrictHostKeyChecking no\n\tUserKnownHostsFile=/dev/null\n\tUser tiozzo" > ~/.ssh/config
+        ssh-keyscan -H 176.32.22.171 >> ~/.ssh/known_hosts
 
     - name: Sync files
-      run: rsync -avz --exclude '.git' ./ tiozzo@192.168.1.195:/home/tiozzo/Portfolio/
+      run: rsync -avz --exclude '.git' ./ tiozzo@176.32.22.171:/home/tiozzo/Portfolio/
