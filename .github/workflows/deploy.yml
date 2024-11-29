@@ -27,11 +27,13 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "matteo.tiozzo.1@studenti.unipd.it"
-          git remote set-url origin https://${{ secrets.DEPLOY }}@github.com/${{ github.repository }}.git
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
 
       - name: Deploy to GitHub Pages
-        run: CI=false npm run deploy
+        run: |
+          npm install gh-pages
+          npm run deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.DEPLOY }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
