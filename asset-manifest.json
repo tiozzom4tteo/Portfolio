@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.c8f78a2b.css",
-    "main.js": "/Portfolio/static/js/main.491368c4.js",
+    "main.js": "/Portfolio/static/js/main.ac5bf39f.js",
     "static/js/453.298f5782.chunk.js": "/Portfolio/static/js/453.298f5782.chunk.js",
     "static/media/paracadute.mp4": "/Portfolio/static/media/paracadute.7aa19e69886c747d30c3.mp4",
     "static/media/bunjee.mp4": "/Portfolio/static/media/bunjee.5138971ce18d1450211c.mp4",
@@ -11,6 +11,7 @@
     "static/media/photoVacation.png": "/Portfolio/static/media/photoVacation.1ba58bef2873b75a11c2.png",
     "static/media/profileMoto.png": "/Portfolio/static/media/profileMoto.b234b26f24edc7d59ab2.png",
     "static/media/color-sharp.png": "/Portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
+    "static/media/gan.png": "/Portfolio/static/media/gan.ce01cabd0f37a6267f35.png",
     "static/media/AI.png": "/Portfolio/static/media/AI.45099473605994d1ec89.png",
     "static/media/cyber.png": "/Portfolio/static/media/cyber.6e785c5341cc18f838dc.png",
     "static/media/logoNoBg.png": "/Portfolio/static/media/logoNoBg.a1ba34a0dc4e8b2f98f0.png",
@@ -36,11 +37,11 @@
     "static/media/70.svg": "/Portfolio/static/media/70.f8808edc0adddb6319866e014288519e.svg",
     "static/media/80.svg": "/Portfolio/static/media/80.8df036d14512ee22b5dc19816175fff8.svg",
     "main.c8f78a2b.css.map": "/Portfolio/static/css/main.c8f78a2b.css.map",
-    "main.491368c4.js.map": "/Portfolio/static/js/main.491368c4.js.map",
+    "main.ac5bf39f.js.map": "/Portfolio/static/js/main.ac5bf39f.js.map",
     "453.298f5782.chunk.js.map": "/Portfolio/static/js/453.298f5782.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c8f78a2b.css",
-    "static/js/main.491368c4.js"
+    "static/js/main.ac5bf39f.js"
   ]
 }
