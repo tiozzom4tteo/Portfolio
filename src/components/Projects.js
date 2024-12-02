@@ -89,7 +89,7 @@ export const Projects = () => {
                       className={isVisible ? "animate__animated animate__slideInUp" : ""}
                     >
                       <Tab.Pane eventKey="first">
-                        <Row className="justify-content-center">
+                        <Row className="justify-content-center g-3">
                           {projects.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}

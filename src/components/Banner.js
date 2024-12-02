@@ -3,7 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import profilePhoto from "../assets/img/profilePhoto.jpg";
 import ski from "../assets/img/ski.jpg";
-import skii from "../assets/img/skii.jpg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import "../App.css"
@@ -15,27 +14,61 @@ const photos = [
 
 export const Banner = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const intervalTime = 20000; 
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const intervalTime = 5000; // Tempo tra le transizioni
+  const totalPhotos = photos.length;
+
+  let startX = 0; // Coordinate iniziali del tocco
+  let endX = 0; // Coordinate finali del tocco
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIsTransitioning(true); 
-      setTimeout(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % photos.length);
-        setIsTransitioning(false); 
-      }, 1000); 
+      nextSlide(); // Passa al prossimo slide
     }, intervalTime);
 
-    return () => clearInterval(interval); 
+    return () => clearInterval(interval); // Pulisce l'intervallo
   }, []);
 
-  const getVisiblePhotos = () => {
-    const visiblePhotos = [];
-    for (let i = 0; i < 2; i++) {
-      visiblePhotos.push(photos[(currentIndex + i) % photos.length]);
+  const handleTouchStart = (e) => {
+    startX = e.touches[0].clientX; // Registra il punto di partenza
+  };
+
+  const handleTouchMove = (e) => {
+    endX = e.touches[0].clientX; // Aggiorna il punto attuale durante il movimento
+  };
+
+  const handleTouchEnd = () => {
+    if (startX - endX > 50) {
+      // Swipe verso sinistra
+      nextSlide();
+    } else if (endX - startX > 50) {
+      // Swipe verso destra
+      prevSlide();
     }
-    return visiblePhotos;
+  };
+
+  const nextSlide = () => {
+    if (isTransitioning) return; // Evita conflitti durante la transizione
+    setIsTransitioning(true);
+    setTimeout(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % totalPhotos); // Cicla in avanti
+      setIsTransitioning(false);
+    }, 1000);
+  };
+
+  const prevSlide = () => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
+    setTimeout(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === 0 ? totalPhotos - 1 : prevIndex - 1
+      ); // Cicla indietro
+      setIsTransitioning(false);
+    }, 1000);
+  };
+
+  const getVisiblePhotos = () => {
+    return [...photos, ...photos]; // Duplica le immagini per il loop continuo
   };
 
   return (
@@ -65,11 +98,19 @@ export const Banner = () => {
                     am <b>always on the lookout for new challenges</b> and am
                     eager to broaden my knowledge.
                   </p>
-                  <div className="carousel-profile">
+                  <div
+                    className="carousel-profile"
+                    onTouchStart={handleTouchStart}
+                    onTouchMove={handleTouchMove}
+                    onTouchEnd={handleTouchEnd}
+                  >
                     <div
                       className={`carousel-track ${
                         isTransitioning ? "transitioning" : ""
                       }`}
+                      style={{
+                        transform: `translateX(-${currentIndex * 100}%)`,
+                      }}
                     >
                       {getVisiblePhotos().map((photo, index) => (
                         <div key={index} className="item">
