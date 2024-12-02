@@ -1,19 +1,48 @@
-# Hi, this is Matteo Tiozzo, a cybersecurity and motorbike enthusiast!
+<hr>
 
-## Who I am?
+# 👋 About Me 👋
 
-As a University of Padua student in my third year, I enjoy taking my motorbike for rides in the Dolomites. My passion lies in cybersecurity and I am currently exploring different pentester software, including Metasploit, Burpsuite, and Zenmap. 
+[![Linkedin Badge](https://img.shields.io/badge/-tiozzomatteo-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/matteo-tiozzo-319395286/)](https://www.linkedin.com/in/matteo-tiozzo-319395286/)
+[![Instagram Badge](https://img.shields.io/badge/-tiozzo_matteo-purple?style=flat-square&logo=instagram&logoColor=white&link=https://www.instagram.com/tiozzo_matteo/)](https://www.instagram.com/tiozzo_matteo/)
+[![Gmail Badge](https://img.shields.io/badge/-matteotiozzo.lavoro@gmail.com-4CAF50?style=flat-square&logo=Gmail&logoColor=white&link=mailto:matteotiozzo.lavoro@gmail.com)](mailto:matteotiozzo.lavoro@gmail.com)
 
-## My aspirations
++ 🎓 I'm a Computer Science student at the **_University of Padua_**, driven by a passion for technology
 
-In my three years of university, I have discovered my love for cybersecurity and I aspire to further my career in this field. I am determined to enhance my skills and secure a job that will aid me in achieving my goals.
++ 🌍 When I'm not diving into new tech knowledge, I love traveling and exploring new places
 
-## My experience
++ 🤖 _**Cybersecurity & AI**_ Enthusiast 
 
-Upon completing high school, I spent a year working at Tecnoimpianti srl. During this time, I held the role of a civil and industrial electrician, responsible for conducting electrical installations for Interspar, Eurospar, and Spar supermarkets, as well as performing electrical and security installations for residential properties. In my second year of University, I worked at Cityware Engineering srl for three months as a software developer. During this period, I gained experience in updating software for managing parking lots in Veneto.
+<hr>
 
-## My skills
+# 💻 Tech Stack 💻
+These are all the technologies I have used during projects or university courses. I do not master all of them but I feel confident using these. 
 
-- Burp Suite, Ghidra, Nmap, Metasploit, Wireshark, IDA Free and Detect It Easy (DiE)
-- Python, C/C++, Javascript, PhP, HTML, css
-- English level B2 
+[![My Skills](https://skillicons.dev/icons?i=apple,linux,ubuntu,windows,kali,bash,powershell,py,c,cpp,grafana,php,md,postgres,react,js,html,qt,matlab,neovim,latex,docker,git,github,tensorflow,vscode,visualstudio&perline=18)](https://skillicons.dev)
+
+<hr>
+
+# 🔐 Security & Pentesting 🔐
+
+![Metasploit](https://img.shields.io/badge/Metasploit-%231F2937.svg?style=for-the-badge&logo=metasploit&logoColor=white) 
+![Nmap](https://img.shields.io/badge/Nmap-%2300395F.svg?style=for-the-badge&logo=nmap&logoColor=white)
+![Burp Suite](https://img.shields.io/badge/Burp%20Suite-%23FC4C02.svg?style=for-the-badge&logo=burp-suite&logoColor=white)
+![Aircrack-ng](https://img.shields.io/badge/Aircrack--ng-%23F29111.svg?style=for-the-badge&logo=aircrack-ng&logoColor=white)
+![Wireshark](https://img.shields.io/badge/Wireshark-%230167A8.svg?style=for-the-badge&logo=wireshark&logoColor=white)<br>
+![Ghidra](https://img.shields.io/badge/Ghidra-%23FF2800.svg?style=for-the-badge&logo=ghidra&logoColor=white)
+![IDA](https://img.shields.io/badge/IDA-%275C80.svg?style=for-the-badge&logo=IDA&logoColor=white)
+![Detect it Easy (DiE)](https://img.shields.io/badge/Detect%20it%20Easy-%23AEA04B.svg?style=for-the-badge&logo=Detect-it-easy&logoColor=white)
+![Generative Adversarial Network (GAN)](https://img.shields.io/badge/Generative%20Adversarial%20Network-%239B59B9.svg?style=for-the-badge&logo=gan&logoColor=white)
+
+<hr>
+
+# ✨ My aspirations ✨
+
+During my three years at university, I developed a strong passion for **_Cybersecurity & Artificial Intelligence_**. These fields captivate me, and I am eager to further my career within them. I am committed to refining my skills and securing a role that will enable me to grow professionally and achieve my aspirations
+
+<hr>
+
+# 📊 GitHub Stats 📊
+
+![tiozzom4tteo's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=tiozzom4tteo&theme=vue&show_icons=true&hide_border=false&layout=compact) 
+
+<hr>
