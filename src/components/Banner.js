@@ -15,43 +15,43 @@ const photos = [
 export const Banner = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
-  const intervalTime = 5000; // Tempo tra le transizioni
+  const intervalTime = 20000; 
   const totalPhotos = photos.length;
 
-  let startX = 0; // Coordinate iniziali del tocco
-  let endX = 0; // Coordinate finali del tocco
+  let startX = 0; 
+  let endX = 0; 
 
   useEffect(() => {
     const interval = setInterval(() => {
-      nextSlide(); // Passa al prossimo slide
+      nextSlide(); 
     }, intervalTime);
 
-    return () => clearInterval(interval); // Pulisce l'intervallo
+    return () => clearInterval(interval); 
   }, []);
 
   const handleTouchStart = (e) => {
-    startX = e.touches[0].clientX; // Registra il punto di partenza
+    startX = e.touches[0].clientX; 
   };
 
   const handleTouchMove = (e) => {
-    endX = e.touches[0].clientX; // Aggiorna il punto attuale durante il movimento
+    endX = e.touches[0].clientX; 
   };
 
   const handleTouchEnd = () => {
     if (startX - endX > 50) {
-      // Swipe verso sinistra
+      
       nextSlide();
     } else if (endX - startX > 50) {
-      // Swipe verso destra
+      
       prevSlide();
     }
   };
 
   const nextSlide = () => {
-    if (isTransitioning) return; // Evita conflitti durante la transizione
+    if (isTransitioning) return; 
     setIsTransitioning(true);
     setTimeout(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % totalPhotos); // Cicla in avanti
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % totalPhotos); 
       setIsTransitioning(false);
     }, 1000);
   };
@@ -68,7 +68,7 @@ export const Banner = () => {
   };
 
   const getVisiblePhotos = () => {
-    return [...photos, ...photos]; // Duplica le immagini per il loop continuo
+    return [...photos, ...photos]; 
   };
 
   return (
