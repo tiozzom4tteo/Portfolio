@@ -2,82 +2,40 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import profilePhoto from "../assets/img/profilePhoto.jpg";
-import motoPhoto from "../assets/img/profileMoto.png";
-import travelPhoto from "../assets/img/photoVacation.png";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+import ski from "../assets/img/ski.jpg";
+import skii from "../assets/img/skii.jpg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import "../App.css"
 
-const photos = [{ image: profilePhoto, name: "Unox S.p.A. Hackathon" }];
+const photos = [
+  { image: profilePhoto, name: "Unox S.p.A. Hackathon" },
+  { image: ski, name: "Skiing in the Dolomites" }
+];
 
 export const Banner = () => {
-  const [loopNum, setLoopNum] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState("");
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const [index, setIndex] = useState(1);
-  const toRotate = [
-    "travel lover!",
-    "cyber newbie!",
-    "Comp. Science Unipd student!",
-  ];
-  const period = 20000;
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const intervalTime = 20000; 
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
+    const interval = setInterval(() => {
+      setIsTransitioning(true); 
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % photos.length);
+        setIsTransitioning(false); 
+      }, 1000); 
+    }, intervalTime);
 
-    return () => {
-      clearInterval(ticker);
-    };
-  }, [text]);
+    return () => clearInterval(interval); 
+  }, []);
 
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting
-      ? fullText.substring(0, text.length - 1)
-      : fullText.substring(0, text.length + 1);
-
-    setText(updatedText);
-
-    if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 2);
+  const getVisiblePhotos = () => {
+    const visiblePhotos = [];
+    for (let i = 0; i < 2; i++) {
+      visiblePhotos.push(photos[(currentIndex + i) % photos.length]);
     }
-
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setIndex((prevIndex) => prevIndex - 1);
-      setDelta(period);
-    } else if (isDeleting && updatedText === "") {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setIndex(1);
-      setDelta(500);
-    } else {
-      setIndex((prevIndex) => prevIndex + 1);
-    }
-  };
-
-  const responsive = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
+    return visiblePhotos;
   };
 
   return (
@@ -97,33 +55,34 @@ export const Banner = () => {
                 <div>
                   <h1>
                     {`Hi there! I'm Matteo, \n`} <br></br> a{" "}
-                    <span id="banner-text">{text}</span>
+                    <span id="banner-text">travel lover!</span>
                   </h1>
                   <br></br>
                   <p id="banner-script">
-                  I have a passion for <b>motorcycles</b> and <b>exploring</b>{" "} new places <span> 🏍️ &#x1F30D;</span>. My interests also include <b>adrenaline sports</b>. <br></br>I am{" "} <b>always on the lookout for new challenges</b> and am eager to broaden my knowledge.
+                    I have a passion for <b>motorcycles</b> and{" "}
+                    <b>exploring</b> new places <span> 🏍️ &#x1F30D;</span>. My
+                    interests also include <b>adrenaline sports</b>. <br></br>I
+                    am <b>always on the lookout for new challenges</b> and am
+                    eager to broaden my knowledge.
                   </p>
-                  <Carousel
-                    responsive={responsive}
-                    infinite={true}
-                    autoPlay={photos.length > 1 ? true : false}
-                    autoPlaySpeed={6000}
-                    arrows={false}
-                    className="carousel-profile"
-                  >
-                    {photos.map((photo, index) => (
-                      <div key={index} className="item">
-                        <img
-                          className={
-                            photos.length > 1 ? "profile-photo" : "unique-photo"
-                          }
-                          src={photo.image}
-                          alt="Profile photo Matteo Tiozzo"
-                        />
-                        <h5 id="profile-script">{photo.name}</h5>
-                      </div>
-                    ))}
-                  </Carousel>
+                  <div className="carousel-profile">
+                    <div
+                      className={`carousel-track ${
+                        isTransitioning ? "transitioning" : ""
+                      }`}
+                    >
+                      {getVisiblePhotos().map((photo, index) => (
+                        <div key={index} className="item">
+                          <img
+                            className="profile-photo"
+                            src={photo.image}
+                            alt={photo.name}
+                          />
+                          <h5 className="profile-script">{photo.name}</h5>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               )}
             </TrackVisibility>

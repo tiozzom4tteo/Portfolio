@@ -1,6 +1,4 @@
 import { Helmet } from "react-helmet";
-import "react-multi-carousel/lib/styles.css";
-import colorSharp from "../assets/img/color-sharp.png";
 
 export const Work = () => {
   return (
@@ -33,7 +31,6 @@ export const Work = () => {
             </div>
           </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="" />
       </section>
   );
   };

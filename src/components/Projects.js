@@ -1,16 +1,16 @@
-import { Container, Row, Col, Tab } from "react-bootstrap";
-import { Helmet } from "react-helmet";
-import { ProjectCard } from "./ProjectCard";
-import React from "react";
-import mltech from "../assets/img/logoNoBg.png";
-import light from "../assets/img/light.png";
-import park from "../assets/img/Park.png";
-import AI from "../assets/img/AI.png";
-import cyber from "../assets/img/cyber.png";
-import synccity from "../assets/img/synccity.png";
-import gan from "../assets/img/gan.png";
 import "animate.css";
+import React from "react";
+import { Helmet } from "react-helmet";
+import AI from "../assets/img/AI.png";
+import gan from "../assets/img/gan.png";
+import park from "../assets/img/Park.png";
+import light from "../assets/img/light.png";
+import cyber from "../assets/img/cyber.png";
+import { ProjectCard } from "./ProjectCard";
 import TrackVisibility from "react-on-screen";
+import mltech from "../assets/img/logoNoBg.png";
+import synccity from "../assets/img/synccity.png";
+import { Container, Row, Col, Tab } from "react-bootstrap";
 
 export const Projects = () => {
   const projects = [

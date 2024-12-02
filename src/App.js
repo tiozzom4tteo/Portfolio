@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./App.css";
 import { NavBar } from "./components/NavBar";
 import { Banner } from "./components/Banner";
@@ -9,6 +9,7 @@ import { Footer } from "./components/Footer";
 import { Work } from "./components/Work";
 import CookieConsent from "./components/Cookie";
 import { CV } from "./components/CV";
+import { Instruction } from "./components/Instruction";
 import {Certifications} from "./components/Certifications";
 
 function App() {
@@ -19,8 +20,9 @@ function App() {
       <Skills />
       <Projects />
       <Work />
+      <Instruction />
       <AboutMe />
-      {/* <Certifications /> */}
+      <Certifications />
       <CV />
       <Footer />
       <CookieConsent />

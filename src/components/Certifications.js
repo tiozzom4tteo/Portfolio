@@ -17,15 +17,16 @@ export const Certifications = () => {
                 <div className="col-12">
                     <div className="skill-bx">
                     <h2>Certifications</h2>
+                    <p>Here are my certifications</p>
                     <ul id="uni-skills">
                         <li className="university-skills">
                             <p>
-                                <a href="https://www.credly.com/badges/f971f7bb-a09c-4fa3-8536-2f71183847a0"><b>Cisco Ethical Hacker</b></a> - earned in november 2023 
+                                <a href="https://www.credly.com/badges/f971f7bb-a09c-4fa3-8536-2f71183847a0"><b>Cisco Ethical Hacker</b></a> - Earned in november 2023 
                             </p>
                         </li>
                         <li className="university-skills">
                             <p>
-                                <a href="https://www.credly.com/badges/ba451e14-64d3-42ee-b7ab-fac7a0373337"><b>Cisco introduction to Cybersecurity</b></a> - earned in october 2023
+                                <a href="https://www.credly.com/badges/ba451e14-64d3-42ee-b7ab-fac7a0373337"><b>Cisco introduction to Cybersecurity</b></a> - Earned in october 2023
                             </p>
                         </li>
                     </ul>

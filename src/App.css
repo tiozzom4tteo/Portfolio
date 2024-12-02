@@ -44,6 +44,8 @@ body {
   background-color: #121212 !important;
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
+  background-image: url('./assets/img/background.png');
+
 }
 
 .App {
@@ -163,7 +165,6 @@ p.danger {
 /************ Banner Css ************/
 
 #home {
-  background-image: url('./assets/img/banner-bg.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -172,7 +173,6 @@ p.danger {
 #home .container {
   padding: 1em;
   position: relative;
-
   text-align: justify;
   width: 95%;
 }
@@ -193,71 +193,82 @@ p.danger {
   line-height: 1.5em;
   padding: auto;
   margin: auto;
-  padding-bottom: 5%;
-}
-
-.profile-photo {
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  margin: auto;
-  padding: auto;
-  margin-top: 1.5em;
-}
-
-#profile-script {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: .5em;
+  margin-bottom: 1em;
 }
 
 .carousel-profile {
-  justify-content: center;
-}
-
-.unique-photo {
-  width: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
   height: auto;
-  margin: auto;
-  margin-top: 1em;
 }
 
-p#banner-script {
+.carousel-track {
+  display: flex;
+  transform: translateX(0);
+  width: 300%; 
+}
+
+.carousel-track.transitioning {
+  transform: translateX(-33.33%); 
+  transition: transform 0.5s ease;
+}
+
+.item {
+  flex: 1;
+  min-width: 33.33%; 
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  height: auto; 
+  padding: 1em; 
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: transparent;
+}
+
+.profile-script {
+  text-align: center;
+  margin-top: 1em;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .carousel-track {
+    transform: translateX(0); 
+    width: 100%; 
+  }
+
+  .item {
+    min-width: 100%;
+    padding: 5px; 
+  }
+
+  .profile-photo {
+    height: auto; 
+    max-height: 300px; 
+  }
+
+  .profile-script {
+    font-size: 0.9rem; 
+  }
+}
+
+/************ Skills Css ************/
+.skill h2, .work-bx h2,.project h2, #Aboutme h2, .instruction-bx h2{
+  font-size: 2em;
+  font-weight: 700;
   margin-bottom: 1em;
 }
 
 
-/************ Skills Css ************/
-.skill, .work {
-  padding: 1em;
-  position: relative;
-  background-image: url('./assets/img/color-sharp.png');
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.skill-bx, .work-bx {
-  background: #151515;
-  text-align: center;
-  width: 100%;
-}
-
-.work-bx{
-  padding: 1em;
-}
-
-.skill h2, .work h2 {
-  padding-top: .5em;
-  font-size: 2em;
-  font-weight: 700;
-}
-
-.skill p, .work p{
+.skill p, .work p, .education p{
   color: #B8B8B8;
   font-size: 1.2em;
   letter-spacing: 0.1em;
@@ -287,29 +298,58 @@ p#banner-script {
   z-index: -4;
 }
 
-#uni-skills, #work-skills {
+#uni-skills, #work-skills, #instruction-skills {
   margin-top: 1.5em;
-
 }
 
-.university-skills, .work-skills {
+.university-skills, .work-skills, .instruction-skills {
   list-style: disc;
   margin: 0 1em 0 0;
 }
 
-/************ Projects Css ************/
-.project {
-  margin: 2em 1em 2em 1em;
-  padding: 3em 0 3em 0;
-  display: flex;
-  background-color: black;
-  justify-content: center;
+/* Titolo della sezione */
+.education-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.project h2 {
-  font-size: 2em;
-  font-weight: 700;
-  text-align: center;
+/* Lista delle esperienze educative */
+.education-list {
+  list-style-type: disc; /* Aggiunge il punto elenco */
+  padding-left: 20px;
+}
+
+.education-list li {
+  margin-bottom: 20px;
+  line-height: 1.6; /* Migliora la leggibilità */
+}
+
+/* Link alle istituzioni */
+.education-list a {
+  color: #1e90ff; /* Colore blu per i link */
+  text-decoration: none;
+}
+
+.education-list a:hover {
+  text-decoration: underline; /* Sottolinea i link al passaggio del mouse */
+}
+
+/* Testo interno (dettagli dei corsi) */
+.education-list span {
+  display: block;
+  margin-top: 5px;
+  color: #dcdcdc; /* Colore grigio chiaro per i dettagli */
+  font-size: 0.9rem;
+}
+
+
+/************ Projects Css ************/
+.project {
+
+  padding: 1em 0 1em 0;
+  display: flex;
+  justify-content: center;
 }
 
 .project p {
@@ -400,12 +440,6 @@ p#banner-script {
 
 }
 
-#Aboutme h2 {
-  font-size: 2em;
-  font-weight: 700;
-  text-align: center;
-}
-
 #paracadute,
 #bunjee,
 #diving,
@@ -451,10 +485,9 @@ li {
 .footer {
   padding: 1em;
   margin: 1em 1em 1em 1em;
-  background-image: url('./assets/img/footer-bg.png');
-  background-position: center;
+  /* background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   text-align: center;
 }
 

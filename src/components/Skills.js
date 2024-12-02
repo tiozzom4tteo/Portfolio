@@ -1,42 +1,8 @@
-import fifty from "../assets/img/50.svg";
-import sixty from "../assets/img/60.svg";
-import seventy from "../assets/img/70.svg";
-import eighty from "../assets/img/80.svg";
 import { Helmet } from "react-helmet";
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import colorSharp from "../assets/img/color-sharp.png";
 
-const skills = [
-  { image: eighty, name: "Python" },
-  { image: eighty, name: "PhP" },
-  { image: eighty, name: "English" },
-  { image: seventy, name: "C++" },
-  { image: sixty, name: "Javascript" },
-  { image: seventy, name: "Qt" },
-];
-
 export const Skills = () => {
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
-
   return (
     <section className="skill" id="skills">
       <Helmet>
@@ -121,35 +87,7 @@ export const Skills = () => {
                     <b>English</b>
                   </p>
                 </li>
-                
-                {/* <li className="university-skills">
-                  <p>
-                    Work:{" "}
-                    <em>
-                      <b>SOC</b>
-                    </em>{" "}
-                    team of{" "}
-                    <em>
-                      <a href="https://www.sanmarcoinformatica.com/smitech/">
-                        Sanmarco Informatica S.p.A.
-                      </a>
-                    </em>
-                  </p>
-                </li> */}
               </ul>
-              {/* <p>These are my abilities:</p> */}
-              <Carousel
-                responsive={responsive}
-                infinite={true}
-                className="owl-carousel owl-theme skill-slider"
-              >
-                {skills.map((skill, index) => (
-                  <div key={index} className="item">
-                    <img src={skill.image} />
-                    <h5>{skill.name}</h5>
-                  </div>
-                ))}
-              </Carousel>
             </div>
           </div>
         </div>
