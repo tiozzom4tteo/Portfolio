@@ -10,6 +10,7 @@ import { ProjectCard } from "./ProjectCard";
 import TrackVisibility from "react-on-screen";
 import mltech from "../assets/img/logoNoBg.png";
 import synccity from "../assets/img/synccity.png";
+import ai_project from "../assets/img/ai_projects.png";
 import { Container, Row, Col, Tab } from "react-bootstrap";
 
 export const Projects = () => {
@@ -22,18 +23,25 @@ export const Projects = () => {
       id: "thesis",
     },
     {
-      title: "Unox S.p.A Hackathon",
-      description: "Python & GenAI development",
-      imgUrl: AI,
-      detailInfo: "https://github.com/tiozzom4tteo/UNOX-Hackathon",
-      id: "hackathon",
-    },
-    {
       title: "Cyber security projects",
       description: "Cybersecurity research",
       imgUrl: cyber,
       detailInfo: "https://github.com/tiozzom4tteo/Cybersecurity-Projects",
       id: "cybersecurity",
+    },
+    {
+      title: "AI projects",
+      description: "AI research",
+      imgUrl: ai_project,
+      detailInfo: "https://github.com/tiozzom4tteo/AI-Projects",
+      id: "ai_project",
+    },
+    {
+      title: "Unox S.p.A Hackathon",
+      description: "Python & GenAI development",
+      imgUrl: AI,
+      detailInfo: "https://github.com/tiozzom4tteo/UNOX-Hackathon",
+      id: "hackathon",
     },
     {
       title: "Sensor Data Factory",
