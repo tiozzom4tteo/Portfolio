@@ -3,15 +3,13 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import profilePhoto from "../assets/img/profilePhoto.jpg";
 import ski from "../assets/img/ski.jpg";
-import laurea from "../assets/img/laurea.jpg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import "../App.css"
 
 const photos = [
   { image: profilePhoto, name: "Unox S.p.A. Hackathon" },
-  { image: ski, name: "Skiing in the Dolomites" },
-  { image: laurea, name: "Graduation day" }
+  { image: ski, name: "Skiing in the Dolomites" }
 ];
 
 export const Banner = () => {
