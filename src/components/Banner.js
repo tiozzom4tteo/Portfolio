@@ -3,13 +3,15 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import profilePhoto from "../assets/img/profilePhoto.jpg";
 import ski from "../assets/img/ski.jpg";
+import laurea from "../assets/img/laurea.jpg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import "../App.css"
 
 const photos = [
   { image: profilePhoto, name: "Unox S.p.A. Hackathon" },
-  { image: ski, name: "Skiing in the Dolomites" }
+  { image: ski, name: "Skiing in the Dolomites" },
+  { image: laurea, name: "Graduation day" }
 ];
 
 export const Banner = () => {
@@ -77,7 +79,7 @@ export const Banner = () => {
         <title>Description</title>
         <meta
           name="description"
-          content="Unipd, university, computer science, cybersecurity, motorbike, travel, sicurezza informatica"
+          content="Unipd, university, computer science, cybersecurity, sicurezza informatica, AI, machine learning, deep learning"
         />
       </Helmet>
       <Container>

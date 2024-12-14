@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-import "../App.css"; // Importa il file CSS
+import "../App.css"; 
 
 export const Instruction = () => {
   return (
@@ -19,11 +19,11 @@ export const Instruction = () => {
                         <ul id="instruction-skills">
                         <li className="instruction-skills">
                             <p>
-                                <b>B.S. in Computer Science at <a href="#">University of Padua </a> </b><br/>
-                                
+                                <b>Bachelor in Computer Science at <a href="#">University of Padua</a> </b><br/>
                                 Relevant coursework: Object Oriented Programming, Data
                                 Structures & Algorithms, Cybersecurity, Software Engineering,
-                                Web Technologies
+                                Web Technologies<br/>
+                                Graduation score: 95/110
                             </p>
                         </li>
                         <li className="instruction-skills">
