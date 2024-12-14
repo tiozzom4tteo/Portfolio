@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.ead5ba4d.css",
-    "main.js": "/Portfolio/static/js/main.50e282df.js",
+    "main.js": "/Portfolio/static/js/main.c5d399c5.js",
     "static/js/453.b21437c2.chunk.js": "/Portfolio/static/js/453.b21437c2.chunk.js",
     "static/media/paracadute.mp4": "/Portfolio/static/media/paracadute.7aa19e69886c747d30c3.mp4",
     "static/media/bunjee.mp4": "/Portfolio/static/media/bunjee.5138971ce18d1450211c.mp4",
@@ -9,6 +9,7 @@
     "static/media/ski.jpg": "/Portfolio/static/media/ski.8c671d6fff0ed9f7c278.jpg",
     "static/media/ski.mp4": "/Portfolio/static/media/ski.353c39af03d005a0cc58.mp4",
     "static/media/profilePhoto.jpg": "/Portfolio/static/media/profilePhoto.8cd0d7030ba98f1117f4.jpg",
+    "static/media/laurea.jpg": "/Portfolio/static/media/laurea.dd89524cf6e9019ab3af.jpg",
     "static/media/color-sharp.png": "/Portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/ai_projects.png": "/Portfolio/static/media/ai_projects.77329f13bc4cacc8985d.png",
     "static/media/gan.png": "/Portfolio/static/media/gan.ce01cabd0f37a6267f35.png",
@@ -16,7 +17,7 @@
     "static/media/cyber.png": "/Portfolio/static/media/cyber.6e785c5341cc18f838dc.png",
     "static/media/logoNoBg.png": "/Portfolio/static/media/logoNoBg.a1ba34a0dc4e8b2f98f0.png",
     "static/media/synccity.png": "/Portfolio/static/media/synccity.221f6b356672b5b681be.png",
-    "static/media/TiozzoMatteo.pdf": "/Portfolio/static/media/TiozzoMatteo.41c4c7462915440b7957.pdf",
+    "static/media/TiozzoMatteo.pdf": "/Portfolio/static/media/TiozzoMatteo.1e579bd606d1c66011a4.pdf",
     "static/media/CentraNo2-Bold.ttf": "/Portfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/Portfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/Portfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
@@ -32,11 +33,11 @@
     "static/media/nav-icon1.svg": "/Portfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/Gmail.svg": "/Portfolio/static/media/Gmail.e1bc2ceb745debf9361ad2160a79823a.svg",
     "main.ead5ba4d.css.map": "/Portfolio/static/css/main.ead5ba4d.css.map",
-    "main.50e282df.js.map": "/Portfolio/static/js/main.50e282df.js.map",
+    "main.c5d399c5.js.map": "/Portfolio/static/js/main.c5d399c5.js.map",
     "453.b21437c2.chunk.js.map": "/Portfolio/static/js/453.b21437c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ead5ba4d.css",
-    "static/js/main.50e282df.js"
+    "static/js/main.c5d399c5.js"
   ]
 }
