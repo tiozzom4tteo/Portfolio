@@ -56,7 +56,7 @@ const CookieConsent = () => {
 
   return (
     <div className="cookie-banner">
-      <p>My website uses cookies to enhance your browsing experience and to provide personalized content.</p>
+      <p>My website uses IP addresses to determine the geographic location of its visitors.</p>
       <button id="acceptCookies" onClick={acceptCookies}>Accept</button>
       <button id="declineCookies" onClick={declineCookies}>Decline</button>
     </div>
