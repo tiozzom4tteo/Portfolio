@@ -23,7 +23,8 @@ export const Instruction = () => {
                                 Relevant coursework: Object Oriented Programming, Data
                                 Structures & Algorithms, Cybersecurity, Software Engineering,
                                 Web Technologies<br/>
-                                Graduation score: 95/110
+                                Graduation score: 95/110<br/>
+                                <a href="https://openbadges.bestr.it/public/assertions/2t0LXMb4TyynUSo6QkaQ5A">Certification badge</a>
                             </p>
                         </li>
                         <li className="instruction-skills">
