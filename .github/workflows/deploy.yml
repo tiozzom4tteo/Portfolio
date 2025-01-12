@@ -14,11 +14,11 @@ jobs:
       - name: Checkout the repository
         uses: actions/checkout@v4
 
-      # Clear npm cache (optional, per evitare problemi)
+      # Clear npm cache (opzionale)
       - name: Clear npm cache
         run: npm cache clean --force
 
-      # Remove `node_modules` and `package-lock.json` (optional, per un'installazione pulita)
+      # Rimuovere node_modules e package-lock.json (opzionale)
       - name: Remove node_modules and package-lock.json
         run: rm -rf node_modules package-lock.json
 
@@ -30,15 +30,11 @@ jobs:
       - name: Build the project
         run: CI=false npm run build
 
-      # Configure Git for deployment
-      - name: Configure Git
+      # Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-      # Deploy to GitHub Pages
-      - name: Deploy to GitHub Pages
-        run: npx gh-pages -d build
+          npx gh-pages -d build --repo=https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
         env:
           CI: false
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
