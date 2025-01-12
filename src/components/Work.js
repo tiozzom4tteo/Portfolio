@@ -25,7 +25,7 @@ export const Work = () => {
                   <li className="work-skills">
                     <p>
                       <b>Security Operation Center Specialist</b> in <a href="https://www.sanmarcoinformatica.com/smitech/">Sanmarco Informatica S.p.a.</a><br/>
-                      Apr 24 - Aug 24
+                      Apr 2024 - Aug 2024
                     </p>
                   </li>
                   <li className="work-skills">
