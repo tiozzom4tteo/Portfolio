@@ -7,32 +7,32 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     steps:
-      # Step 1: Checkout the repository
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - name: Checkout the repository
+        uses: actions/checkout@v4
 
-      # Step 2: Set up Node.js
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
+      - name: Clear npm cache
+        run: npm cache clean --force
 
-      # Step 3: Install dependencies
+      - name: Remove node_modules and package-lock.json
+        run: rm -rf node_modules package-lock.json
+
       - name: Install dependencies
         run: npm install
 
-      # Step 4: Build the project
       - name: Build the project
-        run: npm run build
-        env:
-          CI: false
+        run: CI=false npm run build
 
-      # Step 5: Deploy to GitHub Pages
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
+
       - name: Deploy to GitHub Pages
         run: npm run deploy
         env:
           CI: false
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
