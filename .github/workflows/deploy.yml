@@ -32,8 +32,7 @@ jobs:
           git remote set-url origin https://${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
 
       - name: Deploy to GitHub Pages
-        run: |
-          npm install gh-pages
-          npm run deploy
+        run: npm run deploy
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }} 
+          CI: false
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
