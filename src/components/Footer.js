@@ -34,7 +34,7 @@ export const Footer = () => {
               </a>
             </div>
             <p>
-              Matteo Tiozzo - 2024 <br></br>All Rights Reserved
+              Matteo Tiozzo - 2025 <br></br>All Rights Reserved
             </p>
             <a href="#home" tabIndex={0}>
               <Button id="return" variant="primary">
