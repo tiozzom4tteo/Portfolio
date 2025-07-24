@@ -92,11 +92,13 @@ export const Banner = () => {
                   </h1>
                   <br></br>
                   <p id="banner-script">
-                    I have a passion for <b>motorcycles</b> and{" "}
-                    <b>exploring</b> new places <span> 🏍️ &#x1F30D;</span>. My
-                    interests also include <b>adrenaline sports</b>. <br></br>I
-                    am <b>always on the lookout for new challenges</b> and am
-                    eager to broaden my knowledge.
+                    I have a passion for <b>motorcycles</b> and 
+                    <b>exploring</b> new places <span>🏍️ &#x1F30D;</span>. 
+                    My interests also include <b>adrenaline sports</b>. <br></br>
+                    I'm <b>constantly seeking new challenges</b> and always eager to expand my knowledge.<br></br>
+                    Currently, I'm working on a research project focused on <b>cybersecurity</b> and <b>AI</b>, 
+                    with a particular emphasis on <b>biometric authentication</b>, 
+                    aiming to grow personally and contribute meaningfully to the field. If you are interested in my work, feel free to reach out at this <a href="https://github.com/tiozzom4tteo/Cybersecurity-Projects/tree/main/FaceMind">link</a>! 
                   </p>
                   <div
                     className="carousel-profile"
