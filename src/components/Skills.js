@@ -18,6 +18,11 @@ export const Skills = () => {
             <div className="skill-bx">
               <h2>Skills</h2>
               <ul id="uni-skills">
+               <li className="university-skills">
+                <p>
+                  <b>Microsoft Azure</b> with focus on <em>Intune, Entra (Azure Active Directory),</em> and <em>SharePoint</em> for user and device management, security policies, and collaboration solutions
+                </p>
+              </li>
               <li className="university-skills">
                   <p>
                    <b>Burp Suite, Ghidra, Nmap, Metasploit, Wireshark, IDA Free, Radare2 and Detect It Easy (DiE)</b> are tools I've explored out of personal curiosity and to enhance my cybersecurity skills
