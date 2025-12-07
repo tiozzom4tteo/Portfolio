@@ -87,11 +87,6 @@ export const Skills = () => {
                     course
                   </p>
                 </li>
-                <li className="university-skills">
-                  <p>
-                    <b>English</b>
-                  </p>
-                </li>
               </ul>
             </div>
           </div>

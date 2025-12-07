@@ -257,14 +257,14 @@ p.danger {
 
 
 /************ Skills Css ************/
-.skill h2, .work-bx h2,.project h2, #Aboutme h2, .instruction-bx h2{
+.skill h2, .work-bx h2,.project h2, #Aboutme h2, .instruction-bx h2, .experience-bx h2{
   font-size: 2em;
   font-weight: 700;
   margin-bottom: 1em;
 }
 
 
-.skill p, .work p, .education p{
+.skill p, .work p, .education p, .experience p {
   color: #B8B8B8;
   font-size: 1.2em;
   letter-spacing: 0.1em;
@@ -294,11 +294,11 @@ p.danger {
   z-index: -4;
 }
 
-#uni-skills, #work-skills, #instruction-skills {
+#uni-skills, #work-skills, #instruction-skills, #experience-skills {
   margin-top: 1.5em;
 }
 
-.university-skills, .work-skills, .instruction-skills {
+.university-skills, .work-skills, .instruction-skills, .experience-skills {
   list-style: disc;
   margin: 0 1em 0 0;
 }

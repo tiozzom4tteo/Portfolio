@@ -11,6 +11,7 @@ import CookieConsent from "./components/Cookie";
 import { CV } from "./components/CV";
 import { Instruction } from "./components/Instruction";
 import {Certifications} from "./components/Certifications";
+import {Experience} from "./components/Experience";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Skills />
       <Projects />
       <Work />
+      <Experience />
       <Instruction />
       <AboutMe />
       <Certifications />

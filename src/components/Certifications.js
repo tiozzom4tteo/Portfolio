@@ -21,6 +21,11 @@ export const Certifications = () => {
                     <ul id="uni-skills">
                         <li className="university-skills">
                             <p>
+                                <a href="https://learn.microsoft.com/it-it/training/courses/ms-102t00"><b>MS-102 Microsoft 365 Administrator</b></a> - Currently pursuing
+                            </p>
+                        </li>
+                        <li className="university-skills">
+                            <p>
                                 <a href="https://www.credly.com/badges/f971f7bb-a09c-4fa3-8536-2f71183847a0"><b>Cisco Ethical Hacker</b></a> - Earned in november 2023 
                             </p>
                         </li>
