@@ -32,9 +32,10 @@ jobs:
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          npx gh-pages -d build --repo=https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
         env:
-          CI: false
+          TOKEN: ${{ secrets.GH_TOKEN_DEC2026 }}
+        run: |
+          rm -rf build/.git  # <-- importantissimo
+          npx gh-pages -d build -u "github-actions-bot <actions@github.com>" \
+            -r "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git"
+
