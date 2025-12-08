@@ -36,13 +36,13 @@ export const Projects = () => {
       detailInfo: "https://github.com/tiozzom4tteo/AI-Projects",
       id: "ai_project",
     },
-    // {
-    //   title: "Unox S.p.A Hackathon",
-    //   description: "Python & GenAI development",
-    //   imgUrl: AI,
-    //   detailInfo: "https://github.com/tiozzom4tteo/UNOX-Hackathon",
-    //   id: "hackathon",
-    // },
+    {
+      title: "Unox S.p.A Hackathon",
+      description: "Python & GenAI development",
+      imgUrl: AI,
+      detailInfo: "https://github.com/tiozzom4tteo/UNOX-Hackathon",
+      id: "hackathon",
+    },
     {
       title: "Sensor Data Factory",
       description: "QT & C++ Development",
